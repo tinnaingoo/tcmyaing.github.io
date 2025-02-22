@@ -69,7 +69,7 @@ function prevSlide() {
 }
 
 // Auto Slide
-setInterval(nextSlide, 15000); // Change slide every 15 seconds
+setInterval(nextSlide, 10000); // Change slide every 10 seconds
 
 
 // Swipe Functionality for Slider
