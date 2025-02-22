@@ -321,7 +321,79 @@ html {
     max-width: 800px;
     margin: 0 auto;
 }
+/* Categories Section */
+.categories {
+    padding: 50px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
 
+.categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.category-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+.category-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.category-card .btn {
+    background: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.category-card .btn:hover {
+    background: #005bb5;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .category-card {
+        flex: 1 1 100%; /* Full width on mobile */
+    }
+}
 /* Footer */
 footer {
     background: #333;
