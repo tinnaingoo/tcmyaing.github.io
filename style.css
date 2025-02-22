@@ -5,8 +5,8 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
+    padding-top: 70px; /* Adjust based on header height */
 }
-
 .container {
     width: 80%;
     margin: 0 auto;
@@ -19,18 +19,34 @@ body {
 }
 /* Header */
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Stick to the top */
+    left: 0; /* Stick to the left */
+    width: 100%; /* Full width */
+    background: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Padding */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Adjust as needed */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center the container */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust the logo size */
+    margin-right: 10px; /* Space between logo and text */
 }
 
 nav ul {
@@ -48,9 +64,33 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #0073e6; /* Change color on hover */
+}
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    body {
+        padding-top: 120px; /* Adjust for mobile header height */
+    }
+}
 /* Home Section - Full Screen */
 .hero {
     height: 100vh; /* Full screen height */
