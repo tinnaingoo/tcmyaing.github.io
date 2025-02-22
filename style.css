@@ -12,6 +12,16 @@ body {
     margin: 0 auto;
     max-width: 1200px;
 }
+#home .container {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+}
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
