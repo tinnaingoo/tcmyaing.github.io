@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+h1, h2, h3 {
+  font-family: "Noto Sans Myanmar", serif;
+}
+
 .noto-sans-myanmar-light {
   font-family: "Noto Sans Myanmar", serif;
   font-weight: 300;
