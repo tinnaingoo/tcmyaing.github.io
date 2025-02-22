@@ -87,19 +87,7 @@ nav ul li a:hover {
     color: #0073e6; /* Change color on hover */
 }
 
-/* Hamburger Icon */
-.hamburger {
-    flex-direction: column;
-    cursor: pointer;
-}
 
-.hamburger .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: 0.4s;
-}
 
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
@@ -132,6 +120,12 @@ nav ul li a:hover {
         right: 0;
         background: #333;
     }
+
+/* Hamburger Icon */
+.hamburger {
+    flex-direction: column;
+    cursor: pointer;
+}
 
 .bar1, .bar2, .bar3 {
   width: 35px;
