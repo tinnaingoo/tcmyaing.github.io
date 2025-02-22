@@ -72,7 +72,7 @@ nav ul {
     display: flex;
 }
 
-nav ul:hover {
+nav ul li:hover {
     background: #333;
 }
 nav ul li {
