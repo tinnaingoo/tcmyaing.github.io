@@ -72,9 +72,7 @@ nav ul {
     display: flex;
 }
 
-nav ul li:hover {
-    background: #333;
-}
+
 nav ul li {
     margin-left: 20px;
 }
@@ -117,7 +115,9 @@ nav ul li a:hover {
     nav ul li {
         margin: 10px 0;
     }
-
+    nav ul li a:hover {
+        background: #333;
+    }
     /* Show menu when active */
     nav.active {
         right: 0;
