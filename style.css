@@ -401,7 +401,7 @@ html {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
-    font-family: "Padauk", serif;
+    font-family: "Noto Sans Myanmar", serif;
 }
 
 .category-grid {
@@ -471,7 +471,7 @@ html {
 .ad h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    font-family: "Padauk", serif;
+    font-family: "Noto Sans Myanmar", serif;
 }
 
 .ad p {
@@ -520,6 +520,7 @@ html {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
+    font-family: "Noto Sans Myanmar", serif;
 }
 
 .contact p {
