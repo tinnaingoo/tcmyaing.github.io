@@ -575,6 +575,34 @@ html {
     }
 }
 
+/* Back to Top Button */
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#backToTopBtn:hover {
+    background: #005bb5;
+    transform: scale(1.1);
+}
+
+#backToTopBtn i {
+    margin-top: 5px;
+}
+
 /* Footer */
 footer {
     background: #111184;
