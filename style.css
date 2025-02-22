@@ -524,6 +524,11 @@ html {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+.slide {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
 .slide {
     min-width: 100%;
@@ -562,6 +567,8 @@ html {
     font-size: 1.5rem;
     border-radius: 50%;
     transition: background 0.3s ease;
+    width: 40px;
+    height: 40px;
 }
 
 .prev:hover, .next:hover {
