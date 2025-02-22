@@ -112,7 +112,6 @@ nav ul li a:hover {
     text-align: center;
     background: #0073e6; /* Background color */
     color: #fff; /* Text color */
-    padding: 0 20px; /* Add some padding for small screens */
 }
 
 .hero h2 {
