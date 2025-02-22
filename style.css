@@ -95,7 +95,9 @@ nav ul li a:hover {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    nav {
+    display: none;
+    }
     nav ul {
         flex-direction: column;
         margin-top: 10px;
