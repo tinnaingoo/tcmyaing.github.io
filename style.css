@@ -53,13 +53,25 @@
   font-style: normal;
 }
 
+.padauk-regular {
+  font-family: "Padauk", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.padauk-bold {
+  font-family: "Padauk", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 body {
-    
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
+    font-family: "Padauk", serif;
 }
 .header-box {
     display: flex;
