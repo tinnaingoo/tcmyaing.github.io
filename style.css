@@ -11,9 +11,6 @@
   font-style: normal;
 }
 
-h1, h2, h3 {
-  font-family: "Noto Sans Myanmar", serif;
-}
 
 .noto-sans-myanmar-light {
   font-family: "Noto Sans Myanmar", serif;
@@ -77,6 +74,12 @@ body {
     color: #333;
     font-family: "Padauk", serif;
 }
+
+h1, h2, h3 {
+  font-family: "Noto Sans Myanmar", serif;
+}
+
+
 .header-box {
     display: flex;
     justify-content: space-between;
