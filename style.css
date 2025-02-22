@@ -57,8 +57,9 @@ header .header-box h1 {
 .logo {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-
 .logo img {
     height: 50px; /* Adjust the logo size */
     margin-right: 10px; /* Space between logo and text */
