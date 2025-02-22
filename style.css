@@ -130,6 +130,7 @@ nav ul li a:hover {
     /* Show menu when active */
     nav.active {
         right: 0;
+        background: #333;
     }
 
     /* Animate hamburger icon */
