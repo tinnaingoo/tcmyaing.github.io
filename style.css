@@ -46,22 +46,27 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Hero Section */
+
+/* Home Section - Full Screen */
 .hero {
-    background: #0073e6;
-    color: #fff;
-    padding: 100px 0;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background: #0073e6; /* Background color */
+    color: #fff; /* Text color */
+    padding: 0 20px; /* Add some padding for small screens */
 }
 
 .hero h2 {
-    font-size: 36px;
+    font-size: 3rem; /* Large heading */
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 1.5rem; /* Medium paragraph */
+    margin-bottom: 30px;
 }
 
 .hero .btn {
@@ -71,7 +76,29 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
+
+.hero .btn:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem; /* Smaller heading for mobile */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Smaller paragraph for mobile */
+    }
+
+    .hero .btn {
+        padding: 8px 16px; /* Smaller button for mobile */
+    }
+}
+
 .logo {
     display: flex
 ;
