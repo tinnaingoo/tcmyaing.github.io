@@ -105,7 +105,8 @@ nav ul li a:hover {
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
     .hamburger {
-        display: flex; /* Show on mobile */
+        display: inline-block;
+        cursor: pointer;
     }
 
     nav {
