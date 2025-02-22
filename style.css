@@ -115,9 +115,6 @@ nav ul li a:hover {
     nav ul li {
         margin: 10px 0;
     }
-    nav ul li:hover {
-        background: #333;
-    }
     /* Show menu when active */
     nav.active {
         right: 0;
