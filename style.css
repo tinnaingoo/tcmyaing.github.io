@@ -7,12 +7,12 @@ body {
     color: #333;
     padding-top: 70px; /* Adjust based on header height */
 }
-.container {
+header .container {
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
 }
-#home .container {
+.container {
     display: flex
 ;
     justify-content: space-between;
