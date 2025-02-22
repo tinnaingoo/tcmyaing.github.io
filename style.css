@@ -24,11 +24,7 @@ body {
     margin: 0 auto;
     flex-direction: column;
 }
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
+
 /* Header */
 header {
     position: fixed; /* Fix the header at the top */
@@ -93,6 +89,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        max-width: 720px;
         align-items: flex-start;
     }
     nav {
