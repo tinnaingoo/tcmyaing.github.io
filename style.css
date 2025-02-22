@@ -43,7 +43,7 @@ header {
 }
 
 header .header-box h1 {
-    font-size: 3rem; /* Large heading */
+    font-size: 20px;
 }
 .container {
     display: flex;
