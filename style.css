@@ -102,9 +102,6 @@ nav ul li a:hover {
         margin-bottom: 10px;
     }
 
-    body {
-        padding-top: 120px; /* Adjust for mobile header height */
-    }
 }
 /* Home Section - Full Screen */
 .hero {
