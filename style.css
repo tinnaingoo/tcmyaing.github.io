@@ -133,18 +133,19 @@ nav ul li a:hover {
         background: #333;
     }
 
-    /* Animate hamburger icon */
-    .hamburger.active .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
+    
+/* Animate hamburger icon to cross (X) */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
 
-    .hamburger.active .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
 }
 /* Home Section - Full Screen */
 .hero {
