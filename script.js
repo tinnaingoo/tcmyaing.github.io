@@ -69,4 +69,27 @@ function prevSlide() {
 }
 
 // Auto Slide
-setInterval(nextSlide, 5000); // Change slide every 5 seconds
+setInterval(nextSlide, 15000); // Change slide every 15 seconds
+
+
+// Swipe Functionality for Slider
+let startX = 0;
+let endX = 0;
+
+const slider = document.querySelector(".slider");
+
+slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchmove", (e) => {
+    endX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", () => {
+    if (startX - endX > 50) {
+        nextSlide(); // Swipe left
+    } else if (endX - startX > 50) {
+        prevSlide(); // Swipe right
+    }
+});
