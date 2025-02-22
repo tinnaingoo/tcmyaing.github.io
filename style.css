@@ -89,7 +89,6 @@ nav ul li a:hover {
 
 /* Hamburger Icon */
 .hamburger {
-    display: none; /* Hide by default on larger screens */
     flex-direction: column;
     cursor: pointer;
 }
