@@ -55,7 +55,7 @@
 
 
 body {
-    font-family: "Noto Sans Myanmar", serif;
+    
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -98,6 +98,7 @@ header .header-box h1 {
     padding: 0px;
     margin: 0px;
     height: 100%;
+    font-family: "Noto Sans Myanmar", serif;
 }
 .container {
     display: flex;
@@ -216,6 +217,7 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 3rem; /* Large heading */
     margin-bottom: 20px;
+    font-family: "Noto Sans Myanmar", serif;
 }
 
 .hero p {
