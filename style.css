@@ -92,9 +92,6 @@ nav ul li a:hover {
         max-width: 720px;
         align-items: flex-start;
     }
-    nav {
-    display: none;
-    }
     nav ul {
         flex-direction: column;
         margin-top: 10px;
