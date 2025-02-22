@@ -28,7 +28,7 @@ const backToTopBtn = document.getElementById("backToTopBtn");
 if (backToTopBtn) {
     // Show the button when the user scrolls down 200px
     window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             backToTopBtn.style.display = "block";
         } else {
             backToTopBtn.style.display = "none";
