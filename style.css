@@ -30,7 +30,7 @@ header {
     top: 0; /* Stick to the top */
     left: 0; /* Stick to the left */
     width: 100%; /* Full width */
-    background: #333; /* Background color */
+    background: #111184; /* Background color */
     color: #fff; /* Text color */
     padding: 10px 0; /* Padding */
     z-index: 1000; /* Ensure it stays on top of other elements */
