@@ -390,6 +390,11 @@ html {
 
 /* Responsive Design for Small Screens */
 @media (max-width: 768px) {
+    .categories h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #333;
+}
     .category-card {
         flex: 1 1 100%; /* Full width on mobile */
     }
