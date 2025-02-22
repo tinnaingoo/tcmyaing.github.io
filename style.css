@@ -110,7 +110,7 @@ header .header-box h1 {
     padding: 0px;
     margin: 0px;
     height: 100%;
-    font-family: "Noto Sans Myanmar", serif;
+    font-family: "Padauk", serif;
 }
 .container {
     display: flex;
@@ -401,6 +401,7 @@ html {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
+    font-family: "Padauk", serif;
 }
 
 .category-grid {
@@ -470,6 +471,7 @@ html {
 .ad h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-family: "Padauk", serif;
 }
 
 .ad p {
