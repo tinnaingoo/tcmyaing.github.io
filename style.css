@@ -11,13 +11,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
+    width: 90%; /* Adjust as needed */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center the container */
 }
 .container {
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
