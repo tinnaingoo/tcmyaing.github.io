@@ -779,6 +779,10 @@ section.all-post {
     line-height: 1.6;
     font-family: "Padauk", serif;
 }
+.post-text a{
+  font-family: "Padauk", serif;
+  text-align: justify;
+}
 .post-meta {
     font-size: 14px;
     color: #777;
