@@ -773,11 +773,14 @@ footer p {
 
 <!-- For Post Html -->
 /* Post Content Styles */
+section.post-content {
+    margin-top: 40px;
+}
+
 .post-content {
     padding: 50px 0;
     background: #fff;
     text-align: center;
-    margin-top: 80px;
     max-width: 1200px;
 }
 .post-container {
