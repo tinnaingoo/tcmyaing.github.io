@@ -891,9 +891,9 @@ section.all-post {
     font-family: "Noto Sans Myanmar", serif;
 }
 
-.error-page p {
+error-page p {
     font-size: 1.2rem;
-    color: #555;
+    color: red;
     margin-bottom: 30px;
 }
 
