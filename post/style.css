@@ -814,7 +814,13 @@ section.all-post {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
+.post-text {
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-family: "Padauk", serif;
+}
 .post-meta {
     font-size: 14px;
     color: #777;
@@ -827,12 +833,7 @@ section.all-post {
     margin-bottom: 20px;
 }
 
-.post-text {
-    text-align: left;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-}
+
 
 .back-button {
     margin-top: 20px;
