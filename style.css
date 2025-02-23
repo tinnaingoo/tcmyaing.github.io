@@ -778,7 +778,7 @@ footer p {
     background: #fff;
     text-align: center;
 }
-.post-content .container {
+.post-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
