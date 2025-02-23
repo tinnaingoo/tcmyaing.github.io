@@ -877,36 +877,3 @@ section.all-post {
 }
 }
 
-/* 404 Page Styles */
-.error-page {
-    padding: 50px 0;
-    background: #fff;
-    text-align: center;
-}
-
-.error-page h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #333;
-    font-family: "Noto Sans Myanmar", serif;
-}
-
-error-page p {
-    font-size: 1.2rem;
-    color: red;
-    margin-bottom: 30px;
-}
-
-.error-page .btn {
-    background: #0073e6;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.error-page .btn:hover {
-    background: #005bb5;
-}
