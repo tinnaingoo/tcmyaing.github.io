@@ -777,11 +777,11 @@ footer p {
 /* Post Content Styles */
 
 
-section.post-content {
+section.all-post {
     margin-top: 40px;
 }
 
-.post-content {
+.all-post {
     padding: 50px 0;
     background: #fff;
     text-align: center;
@@ -806,53 +806,64 @@ section.post-content {
 }
 
 .post-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 40px);
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 
-.post-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.post-card img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-}
-.post-card i {
-    color: #0073e6; /* Icon color */
-    margin-bottom: 20px;
-}
-.post-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #0073e6;
+.post-content {
+    padding: 16px;
+    text-align: center;
 }
 
-.post-card p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.post-card .btn {
-    background: #0073e6;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+.post-category {
+    color: #e67e22;
     font-weight: bold;
-    transition: background 0.3s ease;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
-.post-card .btn:hover {
-    background: #005bb5;
+.post-title {
+    font-size: 22px;
+    margin: 8px 0;
+    font-weight: bold;
 }
+
+.post-excerpt {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #777;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.post-meta a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
 
 
