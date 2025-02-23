@@ -25,6 +25,9 @@ section.all-post {
 .post-img-box img {
     width: 200px;
 }
+@media (max-width: 768px) {
+    
+}
 
 .post-text p {
     text-align: justify;
