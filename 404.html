@@ -81,20 +81,30 @@ footer {
 }
     </style>
         <header>
-        <div class="header-box">
-            <div class="logo">
-                <img src="/images/logo-white.png" alt="TC-Myaing Logo">
-                </div>
-            <nav id="navMenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#categories">Blog</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="header-box">
+        <div class="logo">
+            <img src="/images/logo-white.png" alt="Tech with TCM Logo">
+            
         </div>
-    </header>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="/post">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <main class="error-page">
         <div class="container">
