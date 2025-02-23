@@ -773,7 +773,7 @@ section.all-post {
     margin-bottom: 10px;
 }
 .post-text {
-    text-align: left;
+    text-align: justify;
     font-size: 16px;
     color: #333;
     line-height: 1.6;
