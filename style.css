@@ -643,6 +643,9 @@ html {
     width: 40px;
     height: 40px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .prev:hover, .next:hover {
