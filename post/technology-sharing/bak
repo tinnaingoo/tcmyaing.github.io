@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Computer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/post/style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-box">
+        <div class="logo">
+            <img src="/images/logo-white.png" alt="Tech with TCM Logo">
+            
+        </div>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#home">Home</p></li>
+                <li><a href="/post">Blog</p></li>
+                <li><a href="#about">About</p></li>
+                <li><a href="#contact">Contact</p></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="post-content">
+    <div class="container">
+        <div class="post-title-container">
+        <h1 class="post-title">ကွန်ပျူတာဆိုတာဘာလဲ?</h1>
+        <p class="post-meta">By <a href="#">tinnaingoo</p> • Feb 23, 2025</p>
+        </div>
+        <div class="post-image">
+            <img src="https://i.pinimg.com/1200x/d2/e3/d7/d2e3d70daea2a86a742311ca1f7584b7.jpg" alt="What is Computer?">
+        </div>
+
+        <div class="post-text">
+
+<p>ကွန်ပျူတာ ဆိုသည်မှာ ဒေတာများ သိမ်းဆည်းရန် နှင့် တွက်ချက်ရန် အသုံးပြုသော လျှပ်စစ်ပစ္စည်းဖြစ်သည်။</p><br>
+<p>စာရွက်စာတမ်းများ နှင့် စာရင်းဇယားများပြုလုပ်ခြင်း၊ email ပို့ခြင်း၊ Game ဆော့ခြင်း၊ Internet အသုံးပြုခြင်း နှင့် အခြားသောလုပ်ငန်းဆောင်တာများတွင် အသုံးပြုကြသည်။</p>
+
+            
+<p>ကွန်ပျူတာအမျိုးအစားများမှာ</p>
+<ul>
+<li>Microcomputers ( PC, Laptop )</li>
+<li>Workstations / Server</li>
+<li>Mainframes</li>
+<li>Supercomputers</li>
+</ul>
+<p> ဆိုပြီးရှိပါတယ်။ </p>    
+<p>ကျွန်တော်တို့ အသုံးပြုနေကြသော ကွန်ပြူတာအမျိုးအစားမှာ <b>Microcomputers ( PC) </b>ဖြစ်သည်။ </p><br>
+
+<p>PC သည် အခြေခံအားဖြင့် Unit 4 မျိုးဖြင့် အလုပ်လုပ်သည်။</p>
+<ul>
+    <li>Input</li>
+    <li>Output</li>
+    <li>Storing</li>
+    <li>Processing</li>
+</ul>
+
+<p><b>Input Devices ဆိုတာဘာလဲ?</b></p><br>
+<ul>
+    <li>Keyboard</li>
+    <li>Mouse</li>
+    <li>Barcode Reader</li>
+</ul>
+<p>စသဖြင့် ကွန်ပျူတာအတွင်းသို့ ဒေတာများ ထည့်သွင်းသည့် Device များကို <b>Input Device </b>ဟု ခေါ်ပါတယ်။</p><br>
+<div>            
+<img style="width: 200px;" src="https:/i.pinimg.com/736x/16/1b/a7/161ba756c0f45c1029b96a3c0a5b1975.jpg" alt="Keyboard">
+<img style="width: 200px;" src="https:/i.pinimg.com/736x/d3/e6/d4/d3e6d4be25a42450a7d42884254f187f.jpg" alt="Mouse">
+<img style="width: 200px;" src="https:/i.pinimg.com/736x/cc/2c/be/cc2cbe7f0e102b9b7999d107e71598d5.jpg" alt="Barcode Reader">
+</div>            
+<br>
+<p><b>Output Devices ဆိုတာဘာလဲ?</b></p><br>
+<ul>
+    <li>Monitor</li>
+    <li>Printer</li>
+    <li>Speaker</li>
+</ul>
+<p>စသဖြင့် ကွန်ပျူတာအတွင်းသို့ ဒေတာများ ထုတ်ပေးသော Device များကို <b>Output Device </b>ဟု ခေါ်ပါတယ်။</p><br>
+<div>
+<img src="https://i.pinimg.com/736x/ed/37/c2/ed37c25ad7209b0b841a850ac9e0700e.jpg" alt="Monitor">
+<img src="https://i.pinimg.com/736x/82/e3/23/82e323fad8e9b703b4d78a445707720b.jpg" alt="Printer">
+<img src="https://i.pinimg.com/1200x/7f/38/8e/7f388e9184e7d6b4f85136c59772c083.jpg" alt="Speaker">
+</div>
+<br>
+            
+<p><b>Processing နှင့် Storing ဆိုတာ ဘာလဲ?</b></p><br>
+
+<p>ကွန်ပျူတာ ဦးနှောက် CPU ( Central Processing Unit ) ဖြစ်သည်၊ တစ်နည်းအားဖြင့်
+Processor ဟုလည်း ခေါ်သည်။</p><br>
+<div>
+<img style="width:400px" src="https://i.pinimg.com/1200x/cf/1d/ca/cf1dca70570ce34ba1616077df1d5526.jpg" alt="CPU">
+</div>
+<br>
+
+<p>Storage Unit ဆိုသည်မှာ HDD (Hard Disk Drive), SDD (Solid State Drive),
+USB (Universal Serial Bus) နှင့် အခြားသော ဒေတာများ သိမ်းဆည်းနိုင်သည့်
+devices များကို ခေါ်သည်။</p>
+<br>
+
+<div>
+<img src="https://i.pinimg.com/736x/25/16/5d/25165d5f99f7a162cb8e9837332e45be.jpg" alt="HDD">
+<img src="https://i.pinimg.com/736x/8b/46/ce/8b46ce49e6e539814f74b2a81ab20c12.jpg" alt="SSD">
+<img src="https://i.pinimg.com/736x/29/c7/ab/29c7ab87910d9632586f94ef86db5260.jpg" alt="USB">
+</div>
+<br>
+
+<p>ကွန်ပျူတာ တစ်လုံး၏ လုပ်ဆောင်ချက်မှာ အခြေခံအားဖြင့်
+ကျွန်တော်တို့ဟာ Keyboard, Mouse, Microphone များကို အသုံးပြုပြီး ကွန်ပျူတာရဲ့
+ဦးနှောက်ခေါ် CPU ကို လုပ်ဆောင်ခိုင်းစေပါတယ်။ CPU က ခိုင်းစေချက်များကို တွက်ချက်ပေးပြီး
+သောအခါ Output အဖြစ် Monitor, Projector, Speaker, Printer စသည်တို့မှ ပြန်လည်ဖော်ပြပေးပါတယ်။ </p>
+
+
+<p>CPU ကို လူသားတို့ ဦးနှောက်နှင့် နှိုင်းယှဉ်သောအခါ ထူးခြားမှုတစ်ခုရှိပါသည်။ အဲ့တာကတော့ CPU မှာ
+တွက်ချက်မှု (Processing) ကိုသာ လုပ်ဆောင်ပေးနိုင်ပြီး မှတ်သားမှုများ (Memory) ကို မလုပ်ဆောင်ပေးနိုင်ပါ။ လူသားရဲ့ ဦးနှောက် ကတော့ တွက်ချက်မှုကိုရော မှတ်သားမှုကိုပါ လုပ်ဆောင်ပေးနိုင်ပါသည်။ ထို့ကြောင့် ကွန်ပျူတာ ရဲ့ CPU ကတော့ ကူညီမှတ်သားပေးနိုင်မည့် ပစ္စည်းလိုအပ်လာပါသည်။ သူကတော့ memory ပါ။
+ကျွန်တော်တို့ Input ပေးလိုက်တဲ့ ခိုင်းစေချက်တွေဟာ Memory ပေါ်ကို ဦးစွာရောက်ရှိသွားပြီး CPU ကို တွက်ချက်မှုများလုပ်ဆောင်စေဖို့ ပို့ဆောင်ပါတယ်။ CPU မှ တွက်ချက်ပြီးသော data များကို Memory သို့ ပြန်လည်ပို့ဆောင်ပြီး Memory မှ Output Device တွေကို ထပ်မံ ပေးပို့ပါတယ်။</p><br>
+
+
+<p>ဗဟုသုတအနေဖြင့် မှတ်သားထားရမှာက CPU က လုံးဝ မှတ်သားထားမှုကို မလုပ်တာတော့ မဟုတ်ပါဖူး။ အရေးကြီးပြီး ခဏခဏ ပြန်လည် အသုံးပြုရမည့် ဒေတာတွေ၊ ခိုင်းစေချက်တွေကိုတော့ သူ့မှာ အနည်းငယ်ပါဝင်တဲ့ Cache Memory ထဲမှာ မှတ်သားပါတယ်။ ဒါကို Level အဆင့်အနေနဲ့ ခွဲပြီး
+L1 Cache, L2 Cache, L3 Cache ဆိုပြီးမှတ်သားပါတယ်။ L1 ကတော့ cache ဖမ်းတာ အမြန်ဆုံးဖြစ်ပြီး data ပမာဏ အနည်းဆုံးဖြစ်ပါတယ်၊ L1 က Cache ဖမ်းတာ memory ပြည့်သွားရင် L2 ဆီပို့ဆောင်ပါတယ်။ L3 က cache ဖမ်းတာ အမြန်ဆုံးဖြစ်ပါတယ်။</p><br>
+
+<div>
+<img style="width:400px;" src="https://i.pinimg.com/1200x/26/7a/db/267adb72e3adf3b16d27f6d6efb99a24.jpg" alt="CPU Cache">
+</div>
+            
+<br>
+
+<p>ဒီနေရာမှာ Memory ရဲ့ အားနည်းချက်က Hard Disk ဖြစ်ပေါ်လာဖို့အတွက် အကြောင်းအရာဖြစ်လာပါတယ်။ Memory ရဲ့ မှတ်သားမှုဟာ ယာယီ မှတ်သားမှုသာဖြစ်ပြီး ထာဝရ မသိမ်းဆည်းထားနိုင်ပါ။ Power ရရှိချိန်သာလျှင် မှတ်သားထားနိုင်ပြီး Power မရှိလျှင် မှတ်သားထားသမျှ ဒေတာ အကုန် ပျောက်ဆုံးသွားပါသည်။ ဒါကြောင့် ကွန်ပျူတာ Power ပိတ်ထားလျှင်လည်း ဒေတာတွေမှတ်သားထားပေးနိုင်ဖို့ ပစ္စည်းတစ်ခု လိုအပ်လာပါသည်။ အဲ့တာကတော့ Hard Disk ပဲဖြစ်ပါတယ်။
+တစ်နည်းအားဖြင့် ပြောရမယ်ဆိုရင် Storage Device ပါ။ ကွန်ပျူတာမှာ ကျွန်တော်တို့လုပ်နေသမျှ အလုပ်တွေ အားလုံး Save မလုပ်မချင်း Memory ( RAM ) ထဲမှာပဲ ရှိပါသေးတယ်။ သိမ်းဆည်းမှသာ Storage Device ထဲ ရောက်မှာပါ။</p><br>
+
+
+<p>Basic Function Of PC</p><br>
+<p>Processor ကတော့ တပ်ဆင်သမျှ Device တွေကို ထိန်းချုပ်ကွပ်ကဲ ရာမှာ အဓိကျ ကျပါတယ်။ အကြမ်းအားဖြင့် လမ်းကြောင်းသုံးခု ရှိပါတယ်။ Data, Address, Control တို့ ဖြစ်ပါတယ်။ Data ကတော့ User ဖန်တီးတည်ဆောက်လိုက်တဲ့ အချက်အလက်တွေပါ။ Address ကတော့ CPU လိုချင်တဲ့ data တွေဟာ memory ရဲ့ ဘယ်နားမှာ ရှိတယ်၊ HDD ရဲ့ ဘယ် location နားမှာ ရှိတယ် ဆိုတဲ့ နေရာလိပ်စာ အတိအကျ ပြောတဲ့ Address လမ်းကြောင်းတွေဖြစ်ပါတယ်။ Control ကတော့ CPU ကတွက်ချက်လို့ ရလာတဲ့ Result တွေ ခိုင်းစေချက်တွေ၊ ညွှန်ကြားချက်တွေ ဖြစ်ပါတယ်။</p><br>
+
+
+<p>Input Output Device ( I/O Device) တွေကတော့ ကွန်ပျူတာ မှာ ဒေတာ အသွင်း အထုတ်ပြုလုပ်ပေးတဲ့ ပစ္စည်းများ ( KeyBoard, Mouse, Mouse, Monitor, Printer) တွေကိုခေါ်တာပါ။ I/O Device တွေကို Memory နှင့် CPU မှ Data, Address, Control နည်းလမ်းတွေမှ တစ်ဆင့် ချိတ်ဆက်ဆောင်ရွက်ပါတယ်။</p><br><br>
+
+
+<p>လာရောက်ကြည့်ရှုသူများကို အထူးကျေးဇူးတင်ပါတယ်။ ဗဟုသုတရကြလိမ့်မယ်လို့မျှော်လင့်မိပါတယ်။ သူငယ်ချင်းများထံကိုလည်း မျှဝေပေးသွားပါဦး။</p><br>
+<p>မူရင်းရေးသားသူများကို Credit ပေးပါတယ်။ လေးစားစွာဖြင့်</p>
+
+
+
+        <div class="back-button">
+            <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Home</p>
+        </div>
+</div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Tech with TCM. All rights reserved.</p>
+    </div>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
