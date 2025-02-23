@@ -26,6 +26,9 @@ section.all-post {
     width: 200px;
 }
 @media (max-width: 768px) {
+    .post-img-box img {
+    width: 100%;
+}
     
 }
 
