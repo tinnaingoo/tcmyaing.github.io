@@ -769,3 +769,69 @@ footer {
 footer p {
     margin: 0;
 }
+
+
+<!-- For Post Html -->
+/* Post Content Styles */
+.post-content {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+.post-content .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.post-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Noto Sans Myanmar", serif;
+}
+
+.post-content .post-date {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.post-content .post-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.post-content .post-body {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.post-content .post-body p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.post-content .btn {
+    background: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.post-content .btn:hover {
+    background: #005bb5;
+}
