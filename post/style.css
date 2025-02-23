@@ -17,16 +17,8 @@ section.all-post {
     text-align: center;
 }
 
-.post-img-box {
-    padding: 5px;
-}
-
-.post-img-box img {
-    width: 200px;
-}
 @media (max-width: 768px) {
-    .post-img-box img {
-    width: 100%;
+
 }
     
 }
