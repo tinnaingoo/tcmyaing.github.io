@@ -7,11 +7,84 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
+
+    <style>
+        /* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Header Styles */
+header {
+    background: #111184;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Main Content Styles */
+main.error-page {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.error-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.error-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Noto Sans Myanmar", serif;
+}
+
+.error-page p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.error-page .btn {
+    background: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.error-page .btn:hover {
+    background: #005bb5;
+}
+
+/* Footer Styles */
+footer {
+    background: #111184;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Push footer to the bottom */
+}
+    </style>
+        <header>
         <div class="header-box">
             <div class="logo">
-                <img src="images/logo-white.png" alt="Tech with TCM Logo">
-            </div>
+                <img src="/images/logo-white.png" alt="TC-Myaing Logo">
+                </div>
             <nav id="navMenu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -23,13 +96,13 @@
         </div>
     </header>
 
-    <section class="error-page">
+    <main class="error-page">
         <div class="container">
             <h1>404 - Page Not Found</h1>
             <p>Oops! The page you are looking for does not exist.</p>
             <a href="index.html" class="btn">Go Back to Home</a>
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="container">
