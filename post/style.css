@@ -25,6 +25,10 @@ section.all-post {
     padding: 5px;
 }
 
+.post-img-box img {
+    width: 200px;
+}
+
 .post-text p {
     text-align: justify;
 }
