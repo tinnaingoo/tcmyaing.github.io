@@ -18,9 +18,6 @@ section.all-post {
 }
 
 .post-img-box {
-    display: flex
-;
-    flex-direction: row;
     align-items: flex-end;
     padding: 5px;
 }
