@@ -18,14 +18,26 @@ section.all-post {
 }
 
 @media (max-width: 768px) {
-
+    .post-text img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+    }
 }
     
-}
 
 .post-text p {
     text-align: justify;
 }
+
+.post-text img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:"600px"
+}
+
 .post-title-container {
     display: flex;
     flex-direction: column;
@@ -253,6 +265,7 @@ nav ul li a:hover {
 
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
+    
     .hamburger {
         display: inline-block;
         cursor: pointer;
