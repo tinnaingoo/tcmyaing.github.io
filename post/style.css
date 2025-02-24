@@ -858,6 +858,7 @@ html {
 
 /* Responsive Design for Small Screens */
 @media (max-width: 768px) {
+    
     .post-navigation .nav-links {
         flex-direction: column;
         gap: 30px;
@@ -869,10 +870,14 @@ html {
 
     .post-navigation .prev-post {
         text-align: left;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .post-navigation .next-post {
         text-align: right;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
