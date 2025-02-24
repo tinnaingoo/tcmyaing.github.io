@@ -807,6 +807,74 @@ html {
     margin-top: 5px;
 }
 
+/* Post Navigation Styles */
+.post-navigation {
+    padding: 50px 0;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-navigation .nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.post-navigation .nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.post-navigation .nav-link:hover {
+    color: #0073e6;
+}
+
+.post-navigation .nav-link i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.post-navigation .nav-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-navigation .nav-label {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.post-navigation .nav-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .post-navigation .nav-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .post-navigation .nav-link {
+        justify-content: space-between;
+    }
+
+    .post-navigation .prev-post {
+        text-align: left;
+    }
+
+    .post-navigation .next-post {
+        text-align: right;
+    }
+}
+
 /* Footer */
 footer {
     background: #111184;
