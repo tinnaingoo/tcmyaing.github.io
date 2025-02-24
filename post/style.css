@@ -860,7 +860,7 @@ html {
 @media (max-width: 768px) {
     
     .post-navigation .nav-links {
-        flex-direction: column;
+        display: flex;
         gap: 30px;
     }
 
@@ -872,12 +872,14 @@ html {
         text-align: left;
         display: flex;
         justify-content: flex-start;
+        width: 50%;
     }
 
     .post-navigation .next-post {
         text-align: right;
         display: flex;
         justify-content: flex-end;
+        width: 50%;
     }
 }
 
