@@ -6,6 +6,9 @@
     HEIGHT: 100%;
 }
 .header-box .search .sbutton {
+    font-size: 23px;
+}
+.header-box .search .sbutton:hover {
     display:none;
 }
 @media (max-width: 768px) {
