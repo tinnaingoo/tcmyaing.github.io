@@ -107,11 +107,11 @@
 
 /* Filter Container Styles */
 .filter-container {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 50px;
-    }
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
 /* Filter Icon Styles */
 .filter-icon {
     cursor: pointer;
