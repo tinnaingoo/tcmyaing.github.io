@@ -9,6 +9,9 @@
     display:none;
 }
 @media (max-width: 768px) {
+    .header-box .search .search-container #s-button {
+    display:block;
+    }
     .header-box .search .search-container {
     width: 100%;
     display: flex;
