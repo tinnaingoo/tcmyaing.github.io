@@ -193,3 +193,36 @@ function filterPosts() {
 
 // Add event listener to search input for real-time search
 document.getElementById('searchInput').addEventListener('input', filterPosts);
+
+// Function to toggle filter dropdown
+function toggleFilterDropdown() {
+    const filterDropdown = document.getElementById('filterDropdown');
+    filterDropdown.style.display = filterDropdown.style.display === 'block' ? 'none' : 'block';
+}
+
+// Function to filter posts by category
+function filterPostsByCategory(category) {
+    const postGrid = document.getElementById('post-content-grid');
+    const postCards = postGrid.getElementsByClassName('post-card');
+
+    // Loop through all posts and hide those that don't match the selected category
+    Array.from(postCards).forEach(postCard => {
+        const postCategory = postCard.querySelector('.post-category').textContent;
+
+        if (category === "all" || postCategory === category) {
+            postCard.style.display = 'block'; // Show matching posts
+        } else {
+            postCard.style.display = 'none'; // Hide non-matching posts
+        }
+    });
+}
+
+// Add event listeners to filter options
+document.querySelectorAll('.filter-option').forEach(option => {
+    option.addEventListener('click', function () {
+        const selectedCategory = this.getAttribute('data-category');
+        filterPostsByCategory(selectedCategory);
+        toggleFilterDropdown(); // Close the dropdown after selection
+    });
+});
+
