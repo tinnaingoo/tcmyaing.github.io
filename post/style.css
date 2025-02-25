@@ -6,13 +6,7 @@ section.all-post {
     margin-top: 40px;
 }
 
-.header-box .search {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    HEIGHT: 100%;
-}
+
 
 
 .post-content {
