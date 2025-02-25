@@ -110,6 +110,7 @@ slider.addEventListener("touchend", () => {
 
 
 
+<script>
 document.addEventListener("DOMContentLoaded", function() {
     fetch('/post/post-data.json') // JSON File ကို Fetch
         .then(response => response.json()) // JSON အနေနဲ့ Parse
@@ -139,4 +140,4 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error("Error loading posts:", error)); // Error Handling
 });
-
+</script>
