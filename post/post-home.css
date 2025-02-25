@@ -96,5 +96,33 @@
     justify-content: flex-end;
     HEIGHT: 100%;
     display: none;
+
+    @media (max-width: 768px) {
+    .search {
+        max-width: 100%; /* Full width on mobile */
+        margin-left: 0; /* Reset margin for mobile */
+    }
+
+    .search-container {
+        padding: 8px 12px;
+    }
+
+    .search-container i {
+        font-size: 16px;
+    }
+
+    .search-container input {
+        font-size: 14px;
+    }
+
+    .sbutton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sbutton i {
+        font-size: 16px;
+    }
+}
 }
 }    
