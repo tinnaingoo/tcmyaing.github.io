@@ -9,7 +9,6 @@
     display:none;
 }
 .header-box .search .sbutton:hover {
-    
     font-size: 23px;
 }
 @media (max-width: 768px) {
