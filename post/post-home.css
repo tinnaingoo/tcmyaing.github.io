@@ -62,10 +62,10 @@
     .search-container {
         display: none; /* Hide search container on mobile */
         position: absolute;
-        top: 70px;
         right: 20px;
-        width: calc(100% - 40px);
+        width: auto;
         z-index: 1000;
+        margin-right: 90px;
     }
 
     .sbutton {
