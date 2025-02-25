@@ -109,8 +109,9 @@ slider.addEventListener("touchend", () => {
 
 
 <!-- -->
+
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('/post-data.json') // JSON File ကို Fetch
+    fetch('/post/post-data.json') // JSON File ကို Fetch
         .then(response => response.json()) // JSON အနေနဲ့ Parse
         .then(data => {
             let postGrid = document.getElementById("post-content-grid"); // HTML Grid ကို Select
@@ -137,4 +138,4 @@ document.addEventListener("DOMContentLoaded", function() {
             postGrid.innerHTML = postHTML; // HTML ကို Append
         })
         .catch(error => console.error("Error loading posts:", error)); // Error Handling
-});    
+});
