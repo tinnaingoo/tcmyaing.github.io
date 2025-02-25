@@ -109,22 +109,16 @@ slider.addEventListener("touchend", () => {
 
 
 
-// Fetch JSON data and display posts
-async function fetchAndDisplayPosts() {
-    try {
-        // Fetch the JSON data
-        const response = await fetch('/post/post-data.json');
-        const posts = await response.json();
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('/post/post-data.json') // JSON File ကို Fetch
+        .then(response => response.json()) // JSON အနေနဲ့ Parse
+        .then(data => {
+            let postGrid = document.getElementById("post-content-grid"); // HTML Grid ကို Select
+            let postHTML = ""; // HTML Data ကိုထည့်မယ့် Variable
 
-        // Get the container for posts
-        const postGrid = document.getElementById('post-content-grid');
-
-        // Clear existing content
-        postGrid.innerHTML = '';
-
-        // Loop through the posts and create HTML for each post
-        posts.forEach(post => {
-            const postCard = `
+            data.forEach(post => {
+                postHTML += `
                 <div class="post-card">
                     <div class="post-image">
                         <img src="${post.ImageUrl}" alt="${post.ImageCaption}">
@@ -132,22 +126,19 @@ async function fetchAndDisplayPosts() {
                     <div class="post-content">
                         <span class="post-category">${post.Category}</span>
                         <h2 class="post-title">${post.title}</h2>
-                        <p class="post-excerpt">${post.Description}</p>
+                        <p class="post-excerpt">${post.Description.substring(0, 100)}...</p> 
                         <div class="post-footer">
                             <a href="${post.PostUrl}" class="read-more">KEEP READING...</a>
                             <span class="post-meta">By <a href="#">${post.Author}</a> • ${post.Date}</span>
                         </div>
                     </div>
-                </div>
-            `;
-            // Append the post card to the grid
-            postGrid.innerHTML += postCard;
-        });
-    } catch (error) {
-        console.error('Error fetching or displaying posts:', error);
-    }
-}
+                </div>`;
+            });
 
-// Call the function to fetch and display posts
-fetchAndDisplayPosts();
+            postGrid.innerHTML = postHTML; // HTML ကို Append
+        })
+        .catch(error => console.error("Error loading posts:", error)); // Error Handling
+});
+</script>
+
 
