@@ -10,33 +10,34 @@
     "NextPost-Title":"Computer OS အကြောင်း",
     "NextPost-Url":"post/technology-sharing/about-computer-os",
     "PrePost-Title":"Computer Keyboard အကြောင်း",
-    "PrePost-Url":"post/technology-sharing/about-computer-keyboard"},
+    "PrePost-Url":"post/technology-sharing/about-computer-keyboard"
+  },
 
-   { "Category":"Technology Sharing",
-     "title" : "ကွန်ပျူတာကီးဘုတ် (Computer Keyboard) အကြောင်း",
+  { "Category":"Technology Sharing",
+    "title" : "ကွန်ပျူတာကီးဘုတ် (Computer Keyboard) အကြောင်း",
     "Description":"ကွန်ပျူတာကီးဘုတ်သည် ကွန်ပျူတာစနစ်တစ်ခုအတွက် အရေးပါသော Input Device တစ်ခုဖြစ်သည်။ ကီးဘုတ်မှတစ်ဆင့် စာရိုက်ခြင်း၊ ကွန်ပျူတာကို ထိန်းချုပ်ခြင်း၊ နှင့် အခြားလုပ်ဆောင်ချက်များကို လုပ်ဆောင်နိုင်သည်။ ကီးဘုတ်များသည် နည်းပညာတိုးတက်မှုနှင့်အတူ အမျိုးအစား...",
     "ImageUrl":"https://i.pinimg.com/1200x/32/5e/e0/325ee0d8d14e60a33264a49cfb3dca42.jpg",
-     "ImageCaption":"About Computer Keyboard",
+    "ImageCaption":"About Computer Keyboard",
     "Author":"tinnaingoo",
     "Date":"Feb 24, 2025",
     "PostUrl":"post/technology-sharing/about-computer-keyboard",
     "NextPost-Title":"Computer ဆိုတာဘာလဲ",
     "NextPost-Url":"post/technology-sharing/what-is-computer",
     "PrePost-Title":"Computer OS အကြောင်း",
-    "PrePost-Url":"post/technology-sharing/about-computer-os"},
+    "PrePost-Url":"post/technology-sharing/about-computer-os"
+  },
 
   { "Category":"Technology Sharing",
     "title" : "Computer OS အကြောင်း",
     "Description":"ကွန်ပျူတာများသည် လူတို့၏ နေ့စဉ်ဘဝတွင် အရေးကြီးသော အကူအညီပေးပစ္စည်းဖြစ်လာပါသည်။ အဲဒီအတွက် ကွန်ပျူတာများကို အလုပ်လုပ်နိုင်စေရန် Operating System (OS) များလိုအပ်ပြီး OS များသည် hardware နှင့် software အကြား...",
     "ImageUrl":"https://i.pinimg.com/1200x/32/5e/e0/325ee0d8d14e60a33264a49cfb3dca42.jpg",
-    "ImageCaption":"About Computer Os",
+    "ImageCaption":"About Computer OS",
     "Author":"tinnaingoo",
     "Date":"Feb 24, 2025",
     "PostUrl":"post/technology-sharing/about-computer-os",
     "NextPost-Title":"Computer ဆိုတာဘာလဲ",
     "NextPost-Url":"post/technology-sharing/what-is-computer",
     "PrePost-Title":"ကွန်ပျူတာကီးဘုတ် (Computer Keyboard) အကြောင်း",
-    "PrePost-Url":"post/technology-sharing/about-computer-keyboard"},
-
+    "PrePost-Url":"post/technology-sharing/about-computer-keyboard"
+  }
 ]
-  
