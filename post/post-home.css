@@ -123,11 +123,11 @@
     background: #f9f9f9;
 }
 
-/* Filter Dropdown Styles */
-.filter-dropdown {
+/* Filter Popup Styles */
+.filter-popup {
     display: none; /* Hidden by default */
     position: absolute;
-    top: 100%;
+    bottom: 100%; /* Show above the filter icon */
     left: 0;
     background: #fff;
     border: 1px solid #ddd;
@@ -135,14 +135,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     min-width: 150px;
+    padding: 10px;
 }
 
-.filter-dropdown .filter-option {
+.filter-popup .filter-option {
     padding: 10px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-.filter-dropdown .filter-option:hover {
+.filter-popup .filter-option:hover {
     background: #f0f0f0;
 }
