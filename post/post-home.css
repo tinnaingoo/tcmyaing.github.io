@@ -5,8 +5,11 @@
     justify-content: flex-end;
     HEIGHT: 100%;
 }
+.header-box .search .search-container #s-button {
+    display:none;
+}
 @media (max-width: 768px) {
-    .header-box .search {
+    .header-box .search .search-container {
     width: 100%;
     display: flex;
     align-items: center;
