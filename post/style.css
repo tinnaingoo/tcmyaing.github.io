@@ -36,6 +36,7 @@ section.all-post {
     display: block;
     margin-left: auto;
     margin-right: auto;
+     cursor: pointer;
     width:300px;
     }
 }
