@@ -6,6 +6,12 @@ section.all-post {
     margin-top: 40px;
 }
 
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 .post-content {
     max-width: 1200px;
