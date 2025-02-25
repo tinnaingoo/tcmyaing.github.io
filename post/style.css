@@ -30,6 +30,9 @@ section.all-post {
     max-width: 600px
     cursor: pointer;
 }
+.post-image img {
+    width: 100%
+}
 .post-text img:hover {opacity: 0.7;}
 @media (max-width: 768px) {
     .post-text img {
