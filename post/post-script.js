@@ -18,3 +18,23 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+
+function ShowSearchBox() {
+        let logo = document.querySelector('.logo');
+        let searchContainer = document.querySelector('.search-container');
+        let searchButton = document.getElementById('sbutton');
+        let icon = searchButton.querySelector('i');
+
+        if (searchContainer.classList.contains('show')) {
+            // Hide search and show logo again
+            searchContainer.classList.remove('show');
+            logo.classList.remove('hide');
+            icon.classList.replace('fa-close', 'fa-search');
+        } else {
+            // Show search and hide logo
+            searchContainer.classList.add('show');
+            logo.classList.add('hide');
+            icon.classList.replace('fa-search', 'fa-close');
+        }
+    }
