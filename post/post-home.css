@@ -5,3 +5,13 @@
     justify-content: flex-end;
     HEIGHT: 100%;
 }
+@media (max-width: 768px) {
+    .header-box .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    HEIGHT: 100%;
+    display: none;
+}
+}    
