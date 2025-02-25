@@ -1,10 +1,9 @@
-
 /* Search Bar Container */
 .search {
     display: flex;
     align-items: center;
     max-width: 400px; /* Adjust width as needed */
-    margin: 0 auto;
+    margin-left: auto; /* Push to the right */
     background: #fff;
     border-radius: 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -63,6 +62,7 @@
 .sbutton i {
     font-size: 18px;
 }
+
 
 .header-box .search {
     width: 100%;
