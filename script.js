@@ -135,7 +135,7 @@ async function fetchAndDisplayPosts() {
                         <h2 class="post-title">${post.title}</h2>
                         <p class="post-excerpt">${post.Description}</p>
                         <div class="post-footer">
-                            <a href="${post.PostUrl}" class="read-more">KEEP READING...</a>
+                            <a href="${post.PostUrl}.html" class="read-more">KEEP READING...</a>
                             <span class="post-meta">By <a href="#">${post.Author}</a> • ${post.Date}</span>
                         </div>
                     </div>
