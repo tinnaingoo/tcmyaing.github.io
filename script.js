@@ -165,6 +165,9 @@ function filterPosts() {
     const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const postGrid = document.getElementById('post-content-grid');
     const postCards = postGrid.getElementsByClassName('post-card');
+    const noResultsMessage = document.getElementById('noResultsMessage');
+
+    let foundResults = false;
 
     // Loop through all posts and hide those that don't match the search query
     Array.from(postCards).forEach(postCard => {
@@ -174,10 +177,18 @@ function filterPosts() {
 
         if (title.includes(searchInput) || description.includes(searchInput) || category.includes(searchInput)) {
             postCard.style.display = 'block'; // Show matching posts
+            foundResults = true; // At least one result found
         } else {
             postCard.style.display = 'none'; // Hide non-matching posts
         }
     });
+
+    // Show or hide the no results message
+    if (foundResults) {
+        noResultsMessage.style.display = 'none'; // Hide the message if results are found
+    } else {
+        noResultsMessage.style.display = 'block'; // Show the message if no results are found
+    }
 }
 
 // Add event listener to search input for real-time search
