@@ -151,3 +151,26 @@ async function fetchAndDisplayPosts() {
 
 // Call the function to fetch and display posts
 fetchAndDisplayPosts();
+
+// Function to filter posts based on search input
+function filterPosts() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const postGrid = document.getElementById('post-content-grid');
+    const postCards = postGrid.getElementsByClassName('post-card');
+
+    // Loop through all posts and hide those that don't match the search query
+    Array.from(postCards).forEach(postCard => {
+        const title = postCard.querySelector('.post-title').textContent.toLowerCase();
+        const description = postCard.querySelector('.post-excerpt').textContent.toLowerCase();
+        const category = postCard.querySelector('.post-category').textContent.toLowerCase();
+
+        if (title.includes(searchInput) || description.includes(searchInput) || category.includes(searchInput)) {
+            postCard.style.display = 'block'; // Show matching posts
+        } else {
+            postCard.style.display = 'none'; // Hide non-matching posts
+        }
+    });
+}
+
+// Add event listener to search input for real-time search
+document.getElementById('searchInput').addEventListener('input', filterPosts);
