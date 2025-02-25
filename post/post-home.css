@@ -64,7 +64,7 @@
         display: none; /* Hide search container on mobile */
         position: absolute;
         right: 20px;
-        margin-left: 10px;
+        margin-left: 30px;
         width: auto;
         z-index: 1000;
         margin-right: 90px;
