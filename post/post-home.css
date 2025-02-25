@@ -76,7 +76,9 @@
     .search-container.active {
         display: flex; /* Show search container when active */
     }
-
+    .logo {
+    height: 30px;
+    }
     .logo.hide {
         display: none; /* Hide logo when search is active */
     }
