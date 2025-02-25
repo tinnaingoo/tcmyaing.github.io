@@ -23,6 +23,18 @@ function toggleMenu() {
     }
 }
 
+// Toggle Search Container on Mobile
+const sbutton = document.getElementById("sbutton");
+const searchContainer = document.querySelector(".search-container");
+const logo = document.querySelector(".logo");
+
+sbutton.addEventListener("click", function () {
+    searchContainer.classList.toggle("active");
+    logo.classList.toggle("hide");
+    sbutton.classList.toggle("active");
+});
+
+
 // Back to Top Button
 const backToTopBtn = document.getElementById("backToTopBtn");
 
