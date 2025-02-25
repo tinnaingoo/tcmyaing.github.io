@@ -709,7 +709,7 @@ html {
 @media (max-width: 768px) {
     .categories h2 {
     font-size: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     color: #333;
 }
     .category-card {
