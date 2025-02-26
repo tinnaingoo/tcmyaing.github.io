@@ -226,13 +226,14 @@ nav ul li a:hover {
 }
 /* Home Section - Full Screen */
 .hero {
-    height: 100vh; /* Full screen height */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #0073e6; /* Background color */
-    color: #fff; /* Text color */
+    background: #0073e6;
+    color: #fff;
+    flex-direction: column;
 }
 
 .hero h2 {
