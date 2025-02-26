@@ -134,7 +134,7 @@ async function fetchAndDisplayPosts() {
         // Loop through the posts and create HTML for each post
         posts.forEach(post => {
             const postCard = `
-                <div class="post-card">
+                <div class="post-card" data-category="${post.Category}">
                     <div class="post-image">
                         <img src="${post.ImageUrl}" alt="${post.ImageCaption}">
                     </div>
@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Post Content Grid ကို ဖမ်းမယ်
     const postContainer = document.getElementById("post-content-grid");
-    const allPosts = postContainer.querySelectorAll(".post-item");
+    const allPosts = postContainer.querySelectorAll(".post-card");
     const noResultsMessage = document.getElementById("noResultsMessage");
 
     if (category) {
