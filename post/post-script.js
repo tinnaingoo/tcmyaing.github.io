@@ -1,6 +1,3 @@
-
-
-
 // Fetch JSON data and display posts
 async function fetchAndDisplayPosts() {
     try {
