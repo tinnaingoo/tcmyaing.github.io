@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const category = urlParams.get("category");
 
     // Post Content Grid ကို ဖမ်းမယ်
-    const postContainer = document.getElementById("post-content-grid");
+    const postContainer = document.getElementById("all-post");
     const allPosts = postContainer.querySelectorAll(".post-card");
     const noResultsMessage = document.getElementById("noResultsMessage");
 
