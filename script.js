@@ -228,3 +228,32 @@ document.querySelectorAll('.filter-option').forEach(option => {
     });
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // URL မှ category ကို ဖမ်းမယ်
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get("category");
+
+    // Post Content Grid ကို ဖမ်းမယ်
+    const postContainer = document.getElementById("post-content-grid");
+    const allPosts = postContainer.querySelectorAll(".post-item");
+    const noResultsMessage = document.getElementById("noResultsMessage");
+
+    if (category) {
+        let hasResults = false;
+        allPosts.forEach(post => {
+            const postCategory = post.getAttribute("data-category");
+            if (postCategory === category || category === "all") {
+                post.style.display = "block";
+                hasResults = true;
+            } else {
+                post.style.display = "none";
+            }
+        });
+
+        // No Results Message ကို ပြမလားမပြမလား စစ်မယ်
+        noResultsMessage.style.display = hasResults ? "none" : "block";
+    }
+});
+
