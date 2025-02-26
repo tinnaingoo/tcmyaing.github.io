@@ -231,39 +231,39 @@ document.querySelectorAll('.filter-option').forEach(option => {
 
 
 //Home Slide
-let currentSlide = 0;
+let category_currentSlide = 0;
 
-function showSlide(index) {
-    const slides = document.querySelector(".slides");
-    const totalSlides = document.querySelectorAll(".slide").length;
+function category_showSlide(index) {
+    const category_slides = document.querySelector(".category-slides");
+    const category_totalSlides = document.querySelectorAll(".category-slide").length;
 
-    if (index >= totalSlides) {
-        currentSlide = 0;
+    if (index >= category_totalSlides) {
+        category_currentSlide = 0;
     } else if (index < 0) {
-        currentSlide = totalSlides - 1;
+        category_currentSlide = category_totalSlides - 1;
     } else {
-        currentSlide = index;
+        category_currentSlide = index;
     }
 
-    slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+    category_slides.style.transform = `translateX(${-currentSlide * 100}%)`;
 }
 
-function nextSlide() {
-    showSlide(currentSlide + 1);
+function category_nextSlide() {
+    showSlide(category_currentSlide + 1);
 }
 
-function prevSlide() {
-    showSlide(currentSlide - 1);
+function category_prevSlide() {
+    showSlide(category_currentSlide - 1);
 }
 
 // Auto Slide
-setInterval(nextSlide, 5000); // Change slide every 5 seconds
+setInterval(category_nextSlide, 5000); // Change slide every 5 seconds
 
 // Swipe Functionality for Slider
 let startX = 0;
 let endX = 0;
 
-const slider = document.querySelector(".slider");
+const category_slider = document.querySelector(".category-slider");
 
 slider.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
@@ -275,8 +275,8 @@ slider.addEventListener("touchmove", (e) => {
 
 slider.addEventListener("touchend", () => {
     if (startX - endX > 50) {
-        nextSlide(); // Swipe left
+        category_nextSlide(); // Swipe left
     } else if (endX - startX > 50) {
-        prevSlide(); // Swipe right
+        category_prevSlide(); // Swipe right
     }
 });
