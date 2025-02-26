@@ -127,3 +127,42 @@ document.querySelectorAll('.filter-option').forEach(option => {
         toggleFilterPopup(); // Close the popup after selection
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current post title
+    const currentPostTitle = document.querySelector('.post-title').innerText.trim();
+
+    // Fetch JSON data from the file
+    fetch('/path/to/posts.json') // JSON file path ကို မှန်အောင် ထည့်ပါ
+        .then(response => response.json())
+        .then(data => {
+            // Find the current post data
+            const currentPost = data.find(post => post.title.trim() === currentPostTitle);
+
+            if (currentPost) {
+                // Update the post navigation section
+                const prevPostLink = document.querySelector('.prev-post a');
+                const nextPostLink = document.querySelector('.next-post a');
+
+                // Set previous post link
+                if (currentPost.PrePost-Url && currentPost.PrePost-Title) {
+                    prevPostLink.href = `${currentPost.PrePost-Url}.html`;
+                    prevPostLink.querySelector('.nav-title').innerText = currentPost.PrePost-Title;
+                } else {
+                    prevPostLink.style.display = 'none'; // Hide if no previous post
+                }
+
+                // Set next post link
+                if (currentPost.NextPost-Url && currentPost.NextPost-Title) {
+                    nextPostLink.href = `${currentPost.NextPost-Url}.html`;
+                    nextPostLink.querySelector('.nav-title').innerText = currentPost.NextPost-Title;
+                } else {
+                    nextPostLink.style.display = 'none'; // Hide if no next post
+                }
+            } else {
+                console.error('Current post not found in JSON data.');
+            }
+        })
+        .catch(error => console.error('Error fetching JSON data:', error));
+});
