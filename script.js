@@ -105,7 +105,9 @@ slider.addEventListener("touchstart", (e) => {
 
 slider.addEventListener("touchmove", (e) => {
     endX = e.touches[0].clientX;
+    e.preventDefault(); // Prevent scrolling issues on swipe
 });
+
 
 slider.addEventListener("touchend", () => {
     if (startX - endX > 50) {
