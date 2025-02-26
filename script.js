@@ -228,34 +228,3 @@ document.querySelectorAll('.filter-option').forEach(option => {
     });
 });
 
-// First Page Data to Second Page
-// Function to get query parameter by name
-function getQueryParam(name) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(name);
-}
-
-// Function to filter posts by category
-function filterPostsByCategory(category) {
-    const postGrid = document.getElementById('post-content-grid');
-    const postCards = postGrid.getElementsByClassName('post-card');
-
-    // Loop through all posts and hide those that don't match the selected category
-    Array.from(postCards).forEach(postCard => {
-        const postCategory = postCard.querySelector('.post-category').textContent;
-
-        if (category === "all" || postCategory === category) {
-            postCard.style.display = 'block'; // Show matching posts
-        } else {
-            postCard.style.display = 'none'; // Hide non-matching posts
-        }
-    });
-}
-
-// On page load, filter posts based on the category query parameter
-window.onload = function () {
-    const category = getQueryParam('category');
-    if (category) {
-        filterPostsByCategory(category);
-    }
-};
