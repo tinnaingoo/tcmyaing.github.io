@@ -230,33 +230,53 @@ document.querySelectorAll('.filter-option').forEach(option => {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    // URL မှ category parameter ကို ဖမ်းမယ်
-    const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get("category");
+//Home Slide
+let currentSlide = 0;
 
-    // Post List ကို ဖမ်းမယ်
-    const postContainer = document.querySelector(".post-content-grid");
-    const allPosts = postContainer.querySelectorAll(".post-card");
-    const noResultsMessage = document.createElement("div");
-    noResultsMessage.textContent = "No posts found for this category.";
-    noResultsMessage.classList.add("no-results-message");
-    noResultsMessage.style.display = "none";
-    postContainer.appendChild(noResultsMessage);
+function showSlide(index) {
+    const slides = document.querySelector(".slides");
+    const totalSlides = document.querySelectorAll(".slide").length;
 
-    if (category) {
-        let hasResults = false;
-        allPosts.forEach(post => {
-            const postCategory = post.querySelector(".post-category").textContent.trim();
-            if (postCategory === category || category === "all") {
-                post.style.display = "block";
-                hasResults = true;
-            } else {
-                post.style.display = "none";
-            }
-        });
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
 
-        // No Results Message ကို ပြမလားမပြမလား စစ်မယ်
-        noResultsMessage.style.display = hasResults ? "none" : "block";
+    slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+// Auto Slide
+setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
+// Swipe Functionality for Slider
+let startX = 0;
+let endX = 0;
+
+const slider = document.querySelector(".slider");
+
+slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchmove", (e) => {
+    endX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", () => {
+    if (startX - endX > 50) {
+        nextSlide(); // Swipe left
+    } else if (endX - startX > 50) {
+        prevSlide(); // Swipe right
     }
 });
