@@ -231,19 +231,23 @@ document.querySelectorAll('.filter-option').forEach(option => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // URL မှ category ကို ဖမ်းမယ်
+    // URL မှ category parameter ကို ဖမ်းမယ်
     const urlParams = new URLSearchParams(window.location.search);
     const category = urlParams.get("category");
 
-    // Post Content Grid ကို ဖမ်းမယ်
-    const postContainer = document.getElementById("all-post");
+    // Post List ကို ဖမ်းမယ်
+    const postContainer = document.querySelector(".post-content-grid");
     const allPosts = postContainer.querySelectorAll(".post-card");
-    const noResultsMessage = document.getElementById("noResultsMessage");
+    const noResultsMessage = document.createElement("div");
+    noResultsMessage.textContent = "No posts found for this category.";
+    noResultsMessage.classList.add("no-results-message");
+    noResultsMessage.style.display = "none";
+    postContainer.appendChild(noResultsMessage);
 
     if (category) {
         let hasResults = false;
         allPosts.forEach(post => {
-            const postCategory = post.getAttribute("data-category");
+            const postCategory = post.querySelector(".post-category").textContent.trim();
             if (postCategory === category || category === "all") {
                 post.style.display = "block";
                 hasResults = true;
@@ -256,4 +260,3 @@ document.addEventListener("DOMContentLoaded", function () {
         noResultsMessage.style.display = hasResults ? "none" : "block";
     }
 });
-
