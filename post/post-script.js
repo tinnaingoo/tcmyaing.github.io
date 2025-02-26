@@ -4,7 +4,7 @@ const searchContainer = document.querySelector(".search-container");
 const logo = document.querySelector(".logo");
 const searchInput = document.getElementById("searchInput");
 
-sbutton.addEventListener("click", function () {
+sbutton.addEventListener("click", function() {
     searchContainer.classList.toggle("active");
     logo.classList.toggle("hide");
     sbutton.classList.toggle("active");
