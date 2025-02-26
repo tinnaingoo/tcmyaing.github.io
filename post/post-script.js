@@ -6,10 +6,10 @@ async function fetchAndDisplayPosts() {
         const posts = await response.json();
 
         // Get the container for posts
-        //const postGrid = document.getElementById('post-content-grid');
+        const postGrid = document.getElementById('post-content-grid');
 
         // Clear existing content
-        postGrid.innerHTML = '';
+        postGrid.innerHTML='';
 
         // Loop through the posts and create HTML for each post
         posts.forEach(post => {
