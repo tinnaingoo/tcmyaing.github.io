@@ -160,7 +160,8 @@
 .filter-popup .filter-option {
     padding: 10px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3sease;
+    color: black;
 }
 
 .filter-popup .filter-option:hover {
