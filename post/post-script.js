@@ -129,40 +129,40 @@ document.querySelectorAll('.filter-option').forEach(option => {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the current post title
-    const currentPostTitle = document.querySelector('.post-title').innerText.trim();
+document.addEventListener('DOMContentLoaded', function() {
+    // Define the current post title
+    const currentPostTitle = "Why should you be interested in technology?";
 
-    // Fetch JSON data from the file
-    fetch('/post/post-data.json') // JSON file path ကို မှန်အောင် ထည့်ပါ
+    // Fetch the JSON data
+    fetch('/post/post-data.json')
         .then(response => response.json())
         .then(data => {
-            // Find the current post data
-            const currentPost = data.find(post => post.title.trim() === currentPostTitle);
+            // Find the current post in the data
+            const currentIndex = data.findIndex(post => post.title === currentPostTitle);
 
-            if (currentPost) {
-                // Update the post navigation section
-                const prevPostLink = document.querySelector('.prev-post a');
-                const nextPostLink = document.querySelector('.next-post a');
-
-                // Set previous post link
-                if (currentPost.PrePost-Url && currentPost.PrePost-Title) {
-                    prevPostLink.href = `${currentPost.PrePost-Url}.html`;
-                    prevPostLink.querySelector('.nav-title').innerText = currentPost.PrePost-Title;
+            if (currentIndex !== -1) {
+                // Update Previous Post
+                if (data[currentIndex].PrePost-Title && data[currentIndex].PrePost-Url) {
+                    const prevPostLink = document.getElementById('prevPostLink');
+                    const prevPostTitle = document.getElementById('prevPostTitle');
+                    prevPostLink.href = data[currentIndex].PrePost-Url;
+                    prevPostTitle.textContent = data[currentIndex].PrePost-Title;
                 } else {
-                    prevPostLink.style.display = 'none'; // Hide if no previous post
+                    // Hide the previous post link if not available
+                    document.querySelector('.prev-post').style.display = 'none';
                 }
 
-                // Set next post link
-                if (currentPost.NextPost-Url && currentPost.NextPost-Title) {
-                    nextPostLink.href = `${currentPost.NextPost-Url}.html`;
-                    nextPostLink.querySelector('.nav-title').innerText = currentPost.NextPost-Title;
+                // Update Next Post
+                if (data[currentIndex].NextPost-Title && data[currentIndex].NextPost-Url) {
+                    const nextPostLink = document.getElementById('nextPostLink');
+                    const nextPostTitle = document.getElementById('nextPostTitle');
+                    nextPostLink.href = data[currentIndex].NextPost-Url;
+                    nextPostTitle.textContent = data[currentIndex].NextPost-Title;
                 } else {
-                    nextPostLink.style.display = 'none'; // Hide if no next post
+                    // Hide the next post link if not available
+                    document.querySelector('.next-post').style.display = 'none';
                 }
-            } else {
-                console.error('Current post not found in JSON data.');
             }
         })
-        .catch(error => console.error('Error fetching JSON data:', error));
+        .catch(error => console.error('Error fetching post data:', error));
 });
