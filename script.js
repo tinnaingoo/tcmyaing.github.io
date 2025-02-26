@@ -12,7 +12,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Toggle Menu Function
+function toggleMenu() {
+    const navMenu = document.getElementById("navMenu");
+    const hamburger = document.querySelector(".hamburger");
 
+    if (navMenu && hamburger) {
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    }
+}
 
 // Back to Top Button
 const backToTopBtn = document.getElementById("backToTopBtn");
