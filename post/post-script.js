@@ -40,7 +40,7 @@ async function fetchAndDisplayPosts() {
                     </div>
                     <div class="post-content">
                         <span class="post-category">${post.Category}</span>
-                        <h2 class="post-title">${post.title}</h2>
+                        <h2 class="post-title" style="text-align: center;">${post.title}</h2>
                         <p class="post-excerpt">${post.Description}</p>
                         <div class="post-footer">
                             <a href="${post.PostUrl}.html" class="read-more">KEEP READING...</a>
