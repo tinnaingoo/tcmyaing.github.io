@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentPostTitle = document.querySelector('.post-title').innerText.trim();
 
     // Fetch JSON data from the file
-    fetch('/path/to/posts.json') // JSON file path ကို မှန်အောင် ထည့်ပါ
+    fetch('/post/post-data.json') // JSON file path ကို မှန်အောင် ထည့်ပါ
         .then(response => response.json())
         .then(data => {
             // Find the current post data
