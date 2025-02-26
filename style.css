@@ -292,60 +292,8 @@ html {
     to { opacity: 1; }
 }
 
-.hero, .about, .videos, .blog, .contact {
+.hero, .about, .categories, .contact {
     animation: fadeIn 1s ease-in-out;
-}
-
-/* Hover effect for buttons */
-.btn {
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.btn:hover {
-    background: #005bb5;
-    transform: scale(1.05);
-}
-
-.blog {
-    padding: 50px 0;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-.blog-posts {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.post {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 40px);
-    box-sizing: border-box;
-}
-
-.post h3 {
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.post p {
-    font-size: 16px;
-    color: #555;
-}
-
-.post a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.post a:hover {
-    text-decoration: underline;
 }
 
 /* About Section */
@@ -432,23 +380,6 @@ html {
     }
 }
 
-/* Videos Section */
-.videos {
-    padding: 50px 0;
-    text-align: center;
-    background: #f4f4f4;
-}
-
-.videos h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.videos p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 /* Contact Section */
 .contact {
