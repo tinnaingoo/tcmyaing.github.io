@@ -246,6 +246,16 @@ section .all-post {
     text-align: center;
 }
 
+.post-content-body {
+    max-width: 1200px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    text-align: center;
+    margin-top: 40px;
+}
+
   
 
 .post-text p {
