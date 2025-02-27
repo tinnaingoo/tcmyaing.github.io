@@ -1,6 +1,5 @@
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Smooth scrolling for anchor links (excluding navigation links)
+document.querySelectorAll('a[href^="#"]:not(.nav-link)').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
