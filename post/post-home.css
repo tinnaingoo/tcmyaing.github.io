@@ -1,4 +1,4 @@
-.loading-indicator {
+.loadingIndicator {
     font-size: 1.2em;
     color: #333; /* အရောင်ကို မင်းရဲ့ theme နဲ့လိုက်အောင် ပြောင်းလို့ရတယ် */
 }
@@ -7,7 +7,7 @@
     margin-right: 8px;
 }
 
-.loading-indicator {
+.loadingIndicator {
     position: fixed;
     top: 50%;
     left: 50%;
