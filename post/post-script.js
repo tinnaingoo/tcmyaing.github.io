@@ -1,15 +1,17 @@
 // Fetch JSON data and display posts
 async function fetchAndDisplayPosts() {
+    // Get the loading indicator and post grid elements
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    const postGrid = document.getElementById('post-content-grid');
+
+    // Show loading indicator and clear the grid initially
+    loadingIndicator.style.display = 'block';
+    postGrid.innerHTML = '';
+
     try {
         // Fetch the JSON data
         const response = await fetch('/post/post-data.json');
         const posts = await response.json();
-
-        // Get the container for posts
-        const postGrid = document.getElementById('post-content-grid');
-
-        // Clear existing content
-        postGrid.innerHTML='';
 
         // Loop through the posts and create HTML for each post
         posts.forEach(post => {
@@ -32,8 +34,14 @@ async function fetchAndDisplayPosts() {
             // Append the post card to the grid
             postGrid.innerHTML += postCard;
         });
+
+        // Hide loading indicator after posts are loaded
+        loadingIndicator.style.display = 'none';
     } catch (error) {
         console.error('Error fetching or displaying posts:', error);
+        // Hide loading indicator even if there's an error
+        loadingIndicator.style.display = 'none';
+        postGrid.innerHTML = '<p>Sorry, something went wrong while loading posts.</p>';
     }
 }
 
