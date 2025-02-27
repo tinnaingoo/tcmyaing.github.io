@@ -294,6 +294,7 @@ section.all-post {
     margin-bottom: 10px;
     width: 100%;
     text-align: left;
+    color:black;
 }
 .post-text {
     text-align: justify;
