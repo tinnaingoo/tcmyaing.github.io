@@ -162,6 +162,12 @@ section.all-post {
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
+
+   .post-meta {
+    font-size: 14px;
+    color: #777;
+}
+    
   .modal-content {
     width: 100%;
   }
