@@ -237,15 +237,14 @@ section.all-post {
 
 
 
-
 .post-content {
     max-width: 1200px;
+    margin: 50px auto;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
     /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     text-align: center;
-    margin-top: 40px;
 }
 
   
@@ -295,7 +294,6 @@ section.all-post {
     margin-bottom: 10px;
     width: 100%;
     text-align: left;
-    color:black;
 }
 .post-text {
     text-align: justify;
@@ -311,6 +309,7 @@ section.all-post {
 .post-meta {
     font-size: 14px;
     color: #777;
+    margin-bottom: 20px;
 }
 
 
