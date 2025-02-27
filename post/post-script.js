@@ -117,40 +117,48 @@ document.querySelectorAll('.filter-option').forEach(option => {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Define the current post title
-    const currentPostTitle = "Why should you be interested in technology?";
+<!-- Footer မတိုင်ခင်မှာ ထည့်ပါ -->
+    // Navigation link တွေကို update လုပ်မယ့် function
+    async function updateNavigation() {
+        try {
+            // JSON data ကို fetch နဲ့ ဆွဲယူမယ်
+            const response = await fetch('/post/post-data.json');
+            const postsData = await response.json();
 
-    // Fetch the JSON data
-    fetch('/post/post-data.json')
-        .then(response => response.json())
-        .then(data => {
-            // Find the current post in the data
-            const currentIndex = data.findIndex(post => post.title === currentPostTitle);
+            // Page က title ကို ယူမယ်
+            const currentTitle = document.getElementById('post-title').textContent.trim();
 
-            if (currentIndex !== -1) {
-                // Update Previous Post
-                if (data[currentIndex].PrePost-Title && data[currentIndex].PrePost-Url) {
-                    const prevPostLink = document.getElementById('prevPostLink');
-                    const prevPostTitle = document.getElementById('prevPostTitle');
-                    prevPostLink.href = data[currentIndex].PrePost-Url;
-                    prevPostTitle.textContent = data[currentIndex].PrePost-Title;
+            // JSON data ထဲက current title နဲ့ ကိုက်တဲ့ post ကို ရှာမယ်
+            const currentPost = postsData.find(post => post.title === currentTitle);
+
+            // Navigation link တွေကို update လုပ်မယ်
+            if (currentPost) {
+                // Previous Post
+                const prevPostLink = document.getElementById('prevPostLink');
+                const prevPostTitle = document.getElementById('prevPostTitle');
+                if (currentPost['PrePost-Title'] && currentPost['PrePost-Url']) {
+                    prevPostLink.href = `/${currentPost['PrePost-Url']}.html`;
+                    prevPostTitle.textContent = currentPost['PrePost-Title'];
                 } else {
-                    // Hide the previous post link if not available
-                    document.querySelector('.prev-post').style.display = 'none';
+                    prevPostLink.parentElement.style.display = 'none'; // Previous post မရှိရင် ဖျောက်မယ်
                 }
 
-                // Update Next Post
-                if (data[currentIndex].NextPost-Title && data[currentIndex].NextPost-Url) {
-                    const nextPostLink = document.getElementById('nextPostLink');
-                    const nextPostTitle = document.getElementById('nextPostTitle');
-                    nextPostLink.href = data[currentIndex].NextPost-Url;
-                    nextPostTitle.textContent = data[currentIndex].NextPost-Title;
+                // Next Post
+                const nextPostLink = document.getElementById('nextPostLink');
+                const nextPostTitle = document.getElementById('nextPostTitle');
+                if (currentPost['NextPost-Title'] && currentPost['NextPost-Url']) {
+                    nextPostLink.href = `/${currentPost['NextPost-Url']}.html`;
+                    nextPostTitle.textContent = currentPost['NextPost-Title'];
                 } else {
-                    // Hide the next post link if not available
-                    document.querySelector('.next-post').style.display = 'none';
+                    nextPostLink.parentElement.style.display = 'none'; // Next post မရှိရင် ဖျောက်မယ်
                 }
+            } else {
+                console.error('Current post not found in JSON data');
             }
-        })
-        .catch(error => console.error('Error fetching post data:', error));
-});
+        } catch (error) {
+            console.error('Error fetching navigation data:', error);
+        }
+    }
+
+    // Function ကို ခေါ်မယ်
+    updateNavigation();
