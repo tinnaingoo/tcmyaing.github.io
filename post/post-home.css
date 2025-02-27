@@ -282,7 +282,7 @@ section.all-post {
     align-items: flex-start;
     width: 100%;
     border-bottom: solid;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-bottom-style: dotted;
     border-color: gray;
     border-bottom-width: 1px;
@@ -309,7 +309,7 @@ section.all-post {
 .post-meta {
     font-size: 14px;
     color: #777;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -562,6 +562,11 @@ nav ul li a:hover {
 
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
+
+    .post-meta {
+    font-size: 14px;
+    color: #777;
+}
     
     .hamburger {
         display: inline-block;
