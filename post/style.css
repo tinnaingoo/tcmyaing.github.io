@@ -176,7 +176,7 @@ nav ul li a:hover {
     }
     nav {
         position: absolute;
-        top: 70px; /* Adjust based on header height */
+        top: 60px; /* Adjust based on header height */
         right: -100%; /* Hide menu off-screen */
         width: 100%;
         background: #0073e6;
