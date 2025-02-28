@@ -570,6 +570,8 @@ html {
     text-align: center;
 }
 
+
+
 .contact h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -691,6 +693,11 @@ section.all-post {
 }
 
 .post-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.post-content-body {
     padding: 16px;
     text-align: center;
 }
