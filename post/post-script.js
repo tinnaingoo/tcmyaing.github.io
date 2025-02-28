@@ -30,7 +30,7 @@ async function fetchAndDisplayPosts() {
                         </div>
                     </div>
                 </div>
-            `;
+            
             // Append the post card to the grid
             postGrid.innerHTML += postCard;
         });
