@@ -1,3 +1,23 @@
+.loadingIndicator {
+    font-size: 1.2em;
+    color: #333; /* အရောင်ကို မင်းရဲ့ theme နဲ့လိုက်အောင် ပြောင်းလို့ရတယ် */
+}
+
+.fa-spinner {
+    margin-right: 8px;
+}
+
+.loadingIndicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Search Bar Container */
 .search {
     display: flex;
