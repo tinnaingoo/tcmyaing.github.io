@@ -108,7 +108,7 @@
         margin-left: 40px;
     }
     .logo {
-    height: 30px;
+    height: 50px;
     }
     .logo.hide {
         display: none; /* Hide logo when search is active */
