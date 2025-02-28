@@ -40,9 +40,9 @@
     </div>
 </header>
 
-<section class="post-content">
+<section class="post-content" style="margin-top: 50px;">
     <div class="container">
-        <h1 class="post-title">Desert, Bus, Dry Air and Amazing Trip</h1>
+        <h1 class="post-title" id="post-title">Desert, Bus, Dry Air and Amazing Trip</h1>
         <p class="post-meta">By <a href="#">Swintheme</a> • Dec 29, 2018</p>
 
         <div class="post-image">
@@ -362,18 +362,159 @@
 <p><strong>Esc</strong> &ndash; အရာအားလုံးရဲ့ ၉၀ရာခိုင်နှူန်းဟာ &lsquo;cancel&rsquo; ရဲ့ အလုပ် လုပ်ပုံနဲ့ တူတယ်။</p>
 <p><strong>Credit to original.</strong><br />#ကွန်ပျူတာအကြောင်းလေ့လာနေသူများအတွက်<br />လာရောက်လေ့လာပါလို့ အကြုံပြုပါရစေ<br />အာလုံးအဆင်ပြေပါစေဗျာ</p>
         </div>
+    </div>
+</section>
 
-        <div class="back-button">
-            <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+
+<section id="post-navigation" class="post-navigation">
+    <div class="container">
+        <div class="nav-links">
+            <!-- Previous Post -->
+            <div class="prev-post">
+                <a href="#" class="nav-link" id="prevPostLink">
+                    <div class="nav-content">
+                        <span class="nav-label">Previous Post</span>
+                        <h3 class="nav-title" id="prevPostTitle"></h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Next Post -->
+            <div class="next-post">
+                <a href="#" class="nav-link" id="nextPostLink">
+                    <div class="nav-content">
+                        <span class="nav-label">Next Post</span>
+                        <h3 class="nav-title" id="nextPostTitle"></h3>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
+    
+<section id="editor-choice" class="editor-choice">
+    
+</section>
+
+<section id="ad" class="ad">
+    <div class="container">
+        <div class="ad-content">
+            <h2>Subscribe to My YouTube Channel</h2>
+            <p>Stay updated with the latest tech tutorials, software reviews, and more!</p>
+            <a href="https://www.youtube.com/@tcmyaing" target="_blank" class="btn">
+                <i class="fab fa-youtube"></i> Subscribe Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="videos" class="videos">
+    <div class="container">
+        <!-- Image Auto Slider -->
+        <div class="slider">
+            <div class="slides">
+                <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="slide">
+                    <img src="/images/sample-img-1.jpeg" alt="Video 1">
+                    <div class="caption">Video Title 1</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="slide">
+                    <img src="/images/sample-img-2.jpeg" alt="Video 2">
+                    <div class="caption">Video Title 2</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="slide">
+                    <img src="/images/sample-img-3.jpg" alt="Video 3">
+                    <div class="caption">Video Title 3</div>
+                </a>
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+</section>    
+
+       
+</section>
+
+    <section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email or social media.</p>
+        <div class="contact-links">
+            <a href="https://www.youtube.com/@tcmyaing" target="_blank" class="contact-link">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube Channel</span>
+            </a>
+            <a href="https://t.me/tcmyaing" target="_blank" class="contact-link">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram Channel</span>
+            </a>
+            <a href="mailto:tcmyaing@example.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>Email Me</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- Footer မတိုင်ခင်မှာ ထည့်ပါ -->
+<script>
+    // Navigation link တွေကို update လုပ်မယ့် function
+    async function updateNavigation() {
+        try {
+            // JSON data ကို fetch နဲ့ ဆွဲယူမယ်
+            const response = await fetch('/post/post-data.json');
+            const postsData = await response.json();
+
+            // Page က title ကို ယူမယ်
+            const currentTitle = document.getElementById('post-title').textContent.trim();
+
+            // JSON data ထဲက current title နဲ့ ကိုက်တဲ့ post ကို ရှာမယ်
+            const currentPost = postsData.find(post => post.title === currentTitle);
+
+            // Navigation link တွေကို update လုပ်မယ်
+            if (currentPost) {
+                // Previous Post
+                const prevPostLink = document.getElementById('prevPostLink');
+                const prevPostTitle = document.getElementById('prevPostTitle');
+                if (currentPost['PrePost-Title'] && currentPost['PrePost-Url']) {
+                    prevPostLink.href = `/${currentPost['PrePost-Url']}.html`;
+                    prevPostTitle.textContent = currentPost['PrePost-Title'];
+                } else {
+                    prevPostLink.parentElement.style.display = 'none'; // Previous post မရှိရင် ဖျောက်မယ်
+                }
+
+                // Next Post
+                const nextPostLink = document.getElementById('nextPostLink');
+                const nextPostTitle = document.getElementById('nextPostTitle');
+                if (currentPost['NextPost-Title'] && currentPost['NextPost-Url']) {
+                    nextPostLink.href = `/${currentPost['NextPost-Url']}.html`;
+                    nextPostTitle.textContent = currentPost['NextPost-Title'];
+                } else {
+                    nextPostLink.parentElement.style.display = 'none'; // Next post မရှိရင် ဖျောက်မယ်
+                }
+            } else {
+                console.error('Current post not found in JSON data');
+            }
+        } catch (error) {
+            console.error('Error fetching navigation data:', error);
+        }
+    }
+
+    // Function ကို ခေါ်မယ်
+    updateNavigation();
+</script>
+    
 <footer>
     <div class="container">
-        <p>&copy; 2025 Tech with TCM. All rights reserved.</p>
+                    <p>&copy; 2025 TC-Myaing | Design by Tin naing Oo.</p>
     </div>
 </footer>
 <script src="/script.js"></script>
+<script src="/post/post-script.js"></script>    
 </body>
 </html>
+    
