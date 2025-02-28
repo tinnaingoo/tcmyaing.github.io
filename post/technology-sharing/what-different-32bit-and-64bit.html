@@ -167,7 +167,7 @@
 </section>
 
 <div id="myModal" class="modal">
-    <span class="close-model">&times;</span>
+    <span class="close">&times;</span>
     <img class="modal-content" id="img01" alt="Modal Image">
 </div>
     
@@ -215,43 +215,45 @@
         }
     }
 
-    <script>
-    // Navigation code (unchanged) ...
-
-    // Modal အတွက် JavaScript
+    // Image Popup Modal Logic
     const modal = document.getElementById('myModal');
     const img = document.getElementById('post-img');
     const modalImg = document.getElementById('img01');
-    const closeBtn = modal.querySelector('.close-model'); // modal ထဲက close ကို ရှာမယ်
+    const closeBtn = document.querySelector('.close');
 
-    // Debugging logs
-    console.log('Modal:', modal);
-    console.log('Image:', img);
-    console.log('Modal Image:', modalImg);
-    console.log('Close Button:', closeBtn);
-
-    // Image click
+    document.querySelectorAll('.post-text img').forEach(img => {
     img.addEventListener('click', function() {
         modal.style.display = 'flex';
         modalImg.src = this.src;
     });
+    });
 
-    // Close button click
-    if (closeBtn) {
-        closeBtn.addEventListener('click', function() {
-            modal.style.display = 'none';
-        });
-    } else {
-        console.error('Close button not found');
-    }
+    // Image ကို နှိပ်တဲ့အခါ modal ဖွင့်မယ်
+    img.addEventListener('click', function() {
+        modal.style.display = 'block';
+        modalImg.src = this.src; // Click လုပ်တဲ့ image ရဲ့ src ကို modal ထဲ ထည့်မယ်
+    });
 
-    // Modal background click
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
+    // Close button ကို နှိပ်တဲ့အခါ modal ပိတ်မယ်
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Modal ပြင်ပကို နှိပ်ရင်လည်း ပိတ်မယ်
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
             modal.style.display = 'none';
         }
     });
 
+    // Esc key နှိပ်ရင် modal ပိတ်မယ်
+    window.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            modal.style.display = 'none';
+        }
+    });
+    
+    // Function ကို ခေါ်မယ်
     updateNavigation();
 </script>
     
