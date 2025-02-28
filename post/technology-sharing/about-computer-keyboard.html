@@ -550,88 +550,7 @@
     
 <!-- Footer မတိုင်ခင်မှာ ထည့်ပါ -->
 <script>
-    // Navigation link တွေကို update လုပ်မယ့် function
-    async function updateNavigation() {
-        try {
-            // JSON data ကို fetch နဲ့ ဆွဲယူမယ်
-            const response = await fetch('/post/post-data.json');
-            const postsData = await response.json();
-
-            // Page က title ကို ယူမယ်
-            const currentTitle = document.getElementById('post-title').textContent.trim();
-
-            // JSON data ထဲက current title နဲ့ ကိုက်တဲ့ post ကို ရှာမယ်
-            const currentPost = postsData.find(post => post.title === currentTitle);
-
-            // Navigation link တွေကို update လုပ်မယ်
-            if (currentPost) {
-                // Previous Post
-                const prevPostLink = document.getElementById('prevPostLink');
-                const prevPostTitle = document.getElementById('prevPostTitle');
-                if (currentPost['PrePost-Title'] && currentPost['PrePost-Url']) {
-                    prevPostLink.href = `/${currentPost['PrePost-Url']}.html`;
-                    prevPostTitle.textContent = currentPost['PrePost-Title'];
-                } else {
-                    prevPostLink.parentElement.style.display = 'none'; // Previous post မရှိရင် ဖျောက်မယ်
-                }
-
-                // Next Post
-                const nextPostLink = document.getElementById('nextPostLink');
-                const nextPostTitle = document.getElementById('nextPostTitle');
-                if (currentPost['NextPost-Title'] && currentPost['NextPost-Url']) {
-                    nextPostLink.href = `/${currentPost['NextPost-Url']}.html`;
-                    nextPostTitle.textContent = currentPost['NextPost-Title'];
-                } else {
-                    nextPostLink.parentElement.style.display = 'none'; // Next post မရှိရင် ဖျောက်မယ်
-                }
-            } else {
-                console.error('Current post not found in JSON data');
-            }
-        } catch (error) {
-            console.error('Error fetching navigation data:', error);
-        }
-    }
-
-    // Image Popup Modal Logic
-    const modal = document.getElementById('myModal');
-    const img = document.getElementById('post-img');
-    const modalImg = document.getElementById('img01');
-    const closeBtn = document.querySelector('.close');
-
-    document.querySelectorAll('.post-text img').forEach(img => {
-    img.addEventListener('click', function() {
-        modal.style.display = 'flex';
-        modalImg.src = this.src;
-    });
-    });
-
-    // Image ကို နှိပ်တဲ့အခါ modal ဖွင့်မယ်
-    img.addEventListener('click', function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src; // Click လုပ်တဲ့ image ရဲ့ src ကို modal ထဲ ထည့်မယ်
-    });
-
-    // Close button ကို နှိပ်တဲ့အခါ modal ပိတ်မယ်
-    closeBtn.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
-
-    // Modal ပြင်ပကို နှိပ်ရင်လည်း ပိတ်မယ်
-    window.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-
-    // Esc key နှိပ်ရင် modal ပိတ်မယ်
-    window.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-            modal.style.display = 'none';
-        }
-    });
-    
-    // Function ကို ခေါ်မယ်
-    updateNavigation();
+   
 </script>
     
 <footer>
@@ -640,6 +559,6 @@
     </div>
 </footer>
 <script src="/script.js"></script>
-<script src="/post/post-script.js"></script>        
+<script src="/post/post-script.js"></script>    
 </body>
 </html>
