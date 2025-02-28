@@ -1,18 +1,4 @@
-[
-    {
-        "Category": "Technology Sharing",
-        "title": "32 bit နဲ့ 64 bit က ဘာတွေကွာတာလဲ?",
-        "Description": "ကွန်ပျူတာ အသုံးပြုသူတွေ အနေနဲ့ Windows တင်တဲ့အခါ (သို့) ဆော့ဖ်ဝဲလ်တွဲ ဂိမ်းတွေကို download ဆွဲတဲ့အခါမှာ 32 bit Version နှင့် 64 bit Version ကွဲနေတာ‌ကြောင့် စိတ်ရှုပ်ဖူးကြမယ် ထင်ပါတယ်။ Windows, Macintosh, Linux စတဲ့ Computer OS (operating system) တွေမှာ 32 bit နဲ့ 64 bit ဆိုပြီး အမျိုးအစား နှစ်မျိုး ...",
-        "ImageUrl": "https://i.pinimg.com/1200x/da/99/98/da999890c4e3385daac0b30c7734d098.jpg",
-        "ImageCaption": "Difference Between 32bit %26 64bit",
-        "Author": "tinnaingoo",
-        "Date": "Feb 28, 2025",
-        "PostUrl": "post/technology-sharing/what-different-32bit-and-64bit.html",
-        "NextPost-Title": "Computer ဆိုတာဘာလဲ",
-        "NextPost-Url": "post/technology-sharing/what-is-computer",
-        "PrePost-Title": "Operating System (OS) အကြောင်း",
-        "PrePost-Url": "post/technology-sharing/about-computer-os",
-    },
+[ 
     {
         "Category": "Technology Sharing",
         "title": "Why should you be interested in technology?",
