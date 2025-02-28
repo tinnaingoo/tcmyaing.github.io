@@ -36,6 +36,7 @@
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
+    padding-top: 40px;
     display: block;
     max-width: 90%;
     max-height: 90vh;
