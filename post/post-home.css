@@ -43,7 +43,7 @@
 }
 
 /* The Close Button */
-.close {
+.close-model {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -53,8 +53,8 @@
     cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
+.close-model:hover,
+.close-model:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
