@@ -69,6 +69,22 @@ section.all-post {
     max-width: 600px;
     cursor: pointer;
 }
+
+/* Style buttons */
+.post-text .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.post-text .btn:hover {
+  background-color: RoyalBlue;
+}
+
 .post-image img {
     width: 100%;
     border-radius: 6px;
