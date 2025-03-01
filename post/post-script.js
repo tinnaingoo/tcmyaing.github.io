@@ -226,6 +226,15 @@ document.addEventListener('click', (e) => {
             modal.style.display = 'none';
         }
     });
-    
+
+
+    // <h1> က စာသားကို <title> ထဲ ထည့်မယ်
+    const postTitle = document.getElementById('post-title');
+    if (postTitle) {
+        document.title = postTitle.textContent.trim();
+    } else {
+        console.error('Post title element not found');
+    }
+
     // Function ကို ခေါ်မယ်
     updateNavigation();
