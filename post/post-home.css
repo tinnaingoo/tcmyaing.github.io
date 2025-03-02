@@ -135,12 +135,12 @@ nav ul li a:hover {
     }
 
     .logo img {
-        max-height: 50px;
+        max-height: 30px;
     }
 
     nav {
         position: absolute;
-        top: 70px;
+        top: 60px;
         right: -100%;
         width: 100%;
         background: #0073e6;
