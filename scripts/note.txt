@@ -3,8 +3,68 @@
 <script src="scripts/category-filtering.js"></script>
 
 <script src="scripts/nav-toggle.js"></script>
+<script src="scripts/dynmic-title-update.js"></script>
 <script src="scripts/navigation-update.js"></script>
-<script src="scripts/image-popup-modal.js"></script>
 <script src="scripts/image-auto-slider.js"></script>
 
-<script src="scripts/dynmic-title-update.js"></script>
+<script src="scripts/image-popup-modal.js"></script>
+
+
+Image Model အတွက်
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01" alt="Modal Image">
+</div>
+
+Image Auto Slider အတွက်
+<section id="videos" class="videos">
+    <div class="container">
+        <!-- Image Auto Slider -->
+        <div class="slider">
+            <div class="slides">
+                <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="slide">
+                    <img src="/images/sample-img-1.jpeg" alt="Video 1">
+                    <div class="caption">Video Title 1</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="slide">
+                    <img src="/images/sample-img-2.jpeg" alt="Video 2">
+                    <div class="caption">Video Title 2</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="slide">
+                    <img src="/images/sample-img-3.jpg" alt="Video 3">
+                    <div class="caption">Video Title 3</div>
+                </a>
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+</section>  
+
+Post Navigation အတွက်
+<section id="post-navigation" class="post-navigation">
+    <div class="container">
+        <div class="nav-links">
+            <!-- Previous Post -->
+            <div class="prev-post">
+                <a href="#" class="nav-link" id="prevPostLink">
+                    <div class="nav-content">
+                        <span class="nav-label">Previous Post</span>
+                        <h3 class="nav-title" id="prevPostTitle"></h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Next Post -->
+            <div class="next-post">
+                <a href="#" class="nav-link" id="nextPostLink">
+                    <div class="nav-content">
+                        <span class="nav-label">Next Post</span>
+                        <h3 class="nav-title" id="nextPostTitle"></h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
