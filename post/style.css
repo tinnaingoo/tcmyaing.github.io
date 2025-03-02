@@ -438,6 +438,7 @@ section.all-post {
 }
 
 /* ===== 7. Slider Styles ===== */
+/* Video Slider */
 .slider {
     position: relative;
     max-width: 800px;
@@ -451,13 +452,15 @@ section.all-post {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+.slide {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
 .slide {
     min-width: 100%;
     position: relative;
-    text-decoration: none;
-    color: inherit;
-    display: block;
 }
 
 .slide img {
@@ -494,16 +497,22 @@ section.all-post {
     transition: background 0.3s ease;
     width: 40px;
     height: 40px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
-
 .prev:hover, .next:hover {
     background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 /* ===== 9. Contact Section ===== */
