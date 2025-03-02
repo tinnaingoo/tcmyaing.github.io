@@ -242,7 +242,7 @@ nav ul li a:hover {
 }
 
 
-/* ===== 6. Post Content Styles ===== */
+* ===== 6. Post Content Styles ===== */
 section.all-post {
     margin-top: 40px;
 }
@@ -250,15 +250,6 @@ section.all-post {
 .all-post {
     padding: 50px 0;
     background: #fff;
-    text-align: center;
-}
-
-.post-content {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
     text-align: center;
 }
 
@@ -272,20 +263,62 @@ section.all-post {
 }
 
 .post-card {
-    flex: 1 1 100%;
+    flex: 1 1 100%; /* Changed from width: 100% */
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    font-family: Arial, sans-serif;
+   
 }
 
 .post-image img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 6px;
-    margin-bottom: 20px;
+}
+
+.post-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.post-category {
+    color: #e67e22;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.post-title {
+    font-size: 22px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.post-excerpt {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #777;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.post-meta a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 .post-title-container {
@@ -362,6 +395,9 @@ section.all-post {
 }
 
 @media (max-width: 768px) {
+    .post-content h2 {
+        font-size: 1.5rem;
+    }
     .post-text img {
         width: 300px;
     }
