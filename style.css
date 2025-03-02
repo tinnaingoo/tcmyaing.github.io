@@ -154,6 +154,52 @@ nav ul li a:hover {
 }
 
 
+/* ===== 3. Hero Section ===== */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #0073e6;
+    color: #fff;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: "Noto Sans Myanmar", serif;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background: #fff;
+    color: #0073e6;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .hero h2 { font-size: 2rem; }
+    .hero p { font-size: 1.2rem; }
+    .hero .btn { padding: 8px 16px; }
+}
+
+
 
 /* ===== 4. About Section ===== */
 .about {
