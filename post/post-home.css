@@ -1,3 +1,166 @@
+/* ===== 1. General Styles ===== */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Changed from #f9f9f9 to #333 for better readability */
+    font-family: "Padauk", "Noto Sans Myanmar", serif;
+    scroll-behavior: smooth; /* Moved from html */
+}
+
+h1, h2, h3 {
+    font-family: "Noto Sans Myanmar", "Padauk", serif;
+}
+
+/* Font Classes */
+.noto-sans-myanmar-thin { font-family: "Noto Sans Myanmar", serif; font-weight: 100; font-style: normal; }
+.noto-sans-myanmar-extralight { font-family: "Noto Sans Myanmar", serif; font-weight: 200; font-style: normal; }
+.noto-sans-myanmar-light { font-family: "Noto Sans Myanmar", serif; font-weight: 300; font-style: normal; }
+.noto-sans-myanmar-regular { font-family: "Noto Sans Myanmar", serif; font-weight: 400; font-style: normal; }
+.noto-sans-myanmar-medium { font-family: "Noto Sans Myanmar", serif; font-weight: 500; font-style: normal; }
+.noto-sans-myanmar-semibold { font-family: "Noto Sans Myanmar", serif; font-weight: 600; font-style: normal; }
+.noto-sans-myanmar-bold { font-family: "Noto Sans Myanmar", serif; font-weight: 700; font-style: normal; }
+.noto-sans-myanmar-extrabold { font-family: "Noto Sans Myanmar", serif; font-weight: 800; font-style: normal; }
+.noto-sans-myanmar-black { font-family: "Noto Sans Myanmar", serif; font-weight: 900; font-style: normal; }
+.padauk-regular { font-family: "Padauk", serif; font-weight: 400; font-style: normal; }
+.padauk-bold { font-family: "Padauk", serif; font-weight: 700; font-style: normal; }
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column; /* Consolidated from duplicate definition */
+}
+
+/* ===== 2. Header Styles ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111184;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .header-box h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Padauk", serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo img {
+    max-height: 50px; /* Changed to max-height for responsiveness */
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0073e6;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Default အနေနဲ့ ဖျောက်ထားတယ် */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger.active .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.hamburger.active .bar2 {
+    opacity: 0;
+}
+
+.hamburger.active .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: inline-block;
+    }
+
+    .logo img {
+        max-height: 30px;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        background: #0073e6;
+        transition: right 0.3s ease;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
 /* ===== 11. Post Navigation Styles ===== */
 .post-navigation {
     padding: 50px 0;
