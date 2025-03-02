@@ -162,6 +162,10 @@ nav ul li a:hover {
     }
 }
 /* ====== Post Style ==== */
+section.post-content {
+    margin-top: 60px;
+}
+
 .post-title-container {
     display: flex;
     flex-direction: column;
