@@ -1,314 +1,31 @@
-<!-- For Post Html -->
-/* Post Content Styles */
-/* Ad Section */
-.ad {
-    padding: 50px 0;
-    background: #0073e6; /* Background color */
-    color: #fff; /* Text color */
-    text-align: center;
-}
-
-.ad h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: "Noto Sans Myanmar", serif;
-}
-
-.ad p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.ad .btn {
-    background: #ff0000; /* YouTube Red */
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.ad .btn:hover {
-    background: #cc0000; /* Darker Red on Hover */
-}
-
-.ad .btn i {
-    margin-right: 10px; /* Space between icon and text */
-}
-
-
-
-section.all-post {
-    margin-top: 40px;
-}
-
-
-
-
-.post-content {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
-    text-align: center;
-}
-
-  
-
-.post-text p {
-    text-align: justify;
-}
-
-.post-text img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-    cursor: pointer;
-}
-
-/* Style buttons */
-.post-text .btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/* Darker background on mouse-over */
-.post-text .btn:hover {
-  background-color: RoyalBlue;
-}
-
-.post-image img {
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 20px;
-}
-.post-text img:hover {opacity: 0.7;}
-@media (max-width: 768px) {
-    .post-text img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-     cursor: pointer;
-    width:300px;
-    }
-}
-
-
-.post-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    border-bottom: solid;
-    margin-bottom: 20px;
-    border-bottom-style: dotted;
-    border-color: gray;
-    border-bottom-width: 1px;
-}
-.post-title {
-    font-size: 23px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: left;
-}
-.post-text {
-    text-align: justify;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-    font-family: "Padauk", serif;
-}
-.post-text a{
-  font-family: "Padauk", serif;
-  text-align: justify;
-}
-.post-meta {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-
-.back-button {
-    margin-top: 20px;
-}
-
-.btn {
-    text-decoration: none;
-    padding: 10px 15px;
-    background: #3498db;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.btn:hover {
-    background: #2980b9;
-}
-
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
-/* General Styles */
-.noto-sans-myanmar-thin {
-  font-family: "Noto Sans Myanmar", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.noto-sans-myanmar-extralight {
-  font-family: "Noto Sans Myanmar", serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-
-.noto-sans-myanmar-light {
-  font-family: "Noto Sans Myanmar", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.noto-sans-myanmar-regular {
-  font-family: "Noto Sans Myanmar", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.noto-sans-myanmar-medium {
-  font-family: "Noto Sans Myanmar", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.noto-sans-myanmar-semibold {
-  font-family: "Noto Sans Myanmar", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.noto-sans-myanmar-bold {
-  font-family: "Noto Sans Myanmar", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.noto-sans-myanmar-extrabold {
-  font-family: "Noto Sans Myanmar", serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.noto-sans-myanmar-black {
-  font-family: "Noto Sans Myanmar", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.padauk-regular {
-  font-family: "Padauk", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.padauk-bold {
-  font-family: "Padauk", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
+/* ===== 1. General Styles ===== */
 body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
-    font-family: "Padauk", serif;
+    color: #333; /* Changed from #f9f9f9 to #333 for better readability */
+    font-family: "Padauk", "Noto Sans Myanmar", serif;
+    scroll-behavior: smooth; /* Moved from html */
 }
 
 h1, h2, h3 {
-  font-family: "Noto Sans Myanmar", serif;
+    font-family: "Noto Sans Myanmar", "Padauk", serif;
 }
 
+/* Font Classes */
+.noto-sans-myanmar-thin { font-family: "Noto Sans Myanmar", serif; font-weight: 100; font-style: normal; }
+.noto-sans-myanmar-extralight { font-family: "Noto Sans Myanmar", serif; font-weight: 200; font-style: normal; }
+.noto-sans-myanmar-light { font-family: "Noto Sans Myanmar", serif; font-weight: 300; font-style: normal; }
+.noto-sans-myanmar-regular { font-family: "Noto Sans Myanmar", serif; font-weight: 400; font-style: normal; }
+.noto-sans-myanmar-medium { font-family: "Noto Sans Myanmar", serif; font-weight: 500; font-style: normal; }
+.noto-sans-myanmar-semibold { font-family: "Noto Sans Myanmar", serif; font-weight: 600; font-style: normal; }
+.noto-sans-myanmar-bold { font-family: "Noto Sans Myanmar", serif; font-weight: 700; font-style: normal; }
+.noto-sans-myanmar-extrabold { font-family: "Noto Sans Myanmar", serif; font-weight: 800; font-style: normal; }
+.noto-sans-myanmar-black { font-family: "Noto Sans Myanmar", serif; font-weight: 900; font-style: normal; }
+.padauk-regular { font-family: "Padauk", serif; font-weight: 400; font-style: normal; }
+.padauk-bold { font-family: "Padauk", serif; font-weight: 700; font-style: normal; }
 
-.header-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%; /* Adjust as needed */
-    max-width: 1200px; /* Maximum width */
-    margin: 0 auto; /* Center the container */
-}
+/* Container */
 .container {
     display: flex;
     justify-content: space-between;
@@ -316,37 +33,37 @@ h1, h2, h3 {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    flex-direction: column;
+    flex-direction: column; /* Consolidated from duplicate definition */
 }
 
-/* Header */
+/* ===== 2. Header Styles ===== */
 header {
-    position: fixed; /* Fix the header at the top */
-    top: 0; /* Stick to the top */
-    left: 0; /* Stick to the left */
-    width: 100%; /* Full width */
-    background: #111184; /* Background color */
-    color: #fff; /* Text color */
-    padding: 10px 0; /* Padding */
-    z-index: 1000; /* Ensure it stays on top of other elements */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111184;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header .header-box h1 {
     font-size: 20px;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
+    padding: 0;
+    margin: 0;
     font-family: "Padauk", serif;
-}
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%; /* Adjust as needed */
-    max-width: 1200px; /* Maximum width */
-    margin: 0 auto; /* Center the container */
 }
 
 .logo {
@@ -355,9 +72,10 @@ header .header-box h1 {
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
 .logo img {
-    height: 50px; /* Adjust the logo size */
-    margin-right: 10px; /* Space between logo and text */
+    max-height: 50px; /* Changed to max-height for responsiveness */
+    margin-right: 10px;
 }
 
 nav ul {
@@ -366,7 +84,6 @@ nav ul {
     margin: 0;
     display: flex;
 }
-
 
 nav ul li {
     margin-left: 20px;
@@ -380,60 +97,24 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #0073e6; /* Change color on hover */
+    color: #0073e6;
 }
 
-
-
-/* Mobile Menu Styles */
-@media (max-width: 768px) {
-    
-    .hamburger {
-        display: inline-block;
-        cursor: pointer;
-    }
-    .logo img {
-    height: 30px;
-    }
-    nav {
-        position: absolute;
-        top: 70px; /* Adjust based on header height */
-        right: -100%; /* Hide menu off-screen */
-        width: 100%;
-        background: #0073e6;
-        transition: 0.3s;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-    /* Show menu when active */
-    nav.active {
-        right: 0;
-        background: #0073e6;
-    }
-
-/* Hamburger Icon */
+/* Hamburger Menu */
 .hamburger {
+    display: none; /* Default အနေနဲ့ ဖျောက်ထားတယ် */
     flex-direction: column;
     cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
 }
-    
-/* Animate hamburger icon to cross (X) */
+
 .hamburger.active .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
@@ -445,26 +126,62 @@ nav ul li a:hover {
 .hamburger.active .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: inline-block;
+    }
+
+    .logo img {
+        max-height: 30px;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        background: #0073e6;
+        transition: right 0.3s ease;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
-/* Home Section - Full Screen */
+
+/* ===== 3. Hero Section ===== */
 .hero {
-    height: 100vh; /* Full screen height */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #0073e6; /* Background color */
-    color: #fff; /* Text color */
+    background: #0073e6;
+    color: #fff;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .hero h2 {
-    font-size: 3rem; /* Large heading */
+    font-size: 3rem;
     margin-bottom: 20px;
     font-family: "Noto Sans Myanmar", serif;
 }
 
 .hero p {
-    font-size: 1.5rem; /* Medium paragraph */
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
@@ -483,56 +200,18 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem; /* Smaller heading for mobile */
-    }
-
-    .hero p {
-        font-size: 1.2rem; /* Smaller paragraph for mobile */
-    }
-
-    .hero .btn {
-        padding: 8px 16px; /* Smaller button for mobile */
-    }
+    .hero h2 { font-size: 2rem; }
+    .hero p { font-size: 1.2rem; }
+    .hero .btn { padding: 8px 16px; }
 }
 
-
-.logo img {
-    height: 50px; /* Adjust the size as needed */
-}
-
-/* Smooth scroll behavior */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.hero, .about, .videos, .blog, .contact {
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Hover effect for buttons */
-.btn {
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.btn:hover {
-    background: #005bb5;
-    transform: scale(1.05);
-}
-
-/* About Section */
+/* ===== 4. About Section ===== */
 .about {
     padding: 50px 0;
     background: #f9f9f9;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .about h2 {
@@ -551,7 +230,7 @@ html {
     padding: 0 20px;
 }
 
-.about-text {
+.about-text, .about-skills {
     flex: 1;
     text-align: left;
 }
@@ -561,11 +240,6 @@ html {
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
-}
-
-.about-skills {
-    flex: 1;
-    text-align: left;
 }
 
 .about-skills h3 {
@@ -601,7 +275,6 @@ html {
     color: #005bb5;
 }
 
-/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
@@ -612,48 +285,12 @@ html {
     }
 }
 
-/* Videos Section */
-.videos {
-    padding: 50px 0;
-    text-align: center;
-    background: #f4f4f4;
-}
-
-.videos h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.videos p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Contact Section */
-.contact {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.contact p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-
-/* Categories Section */
+/* ===== 5. Categories Section ===== */
 .categories {
     padding: 50px 0;
     background: #f9f9f9;
     text-align: center;
-    display: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .categories h2 {
@@ -668,8 +305,7 @@ html {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 51px;
+    margin: 50px 0;
 }
 
 .category-card {
@@ -692,10 +328,12 @@ html {
     height: 60px;
     margin-bottom: 20px;
 }
+
 .category-icon i {
-    color: #0073e6; /* Icon color */
+    color: #0073e6;
     margin-bottom: 20px;
 }
+
 .category-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
@@ -715,18 +353,145 @@ html {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s ease;
 }
 
-.category-card .btn:hover {
-    background: #005bb5;
+@media (max-width: 768px) {
+    .categories h2 { font-size: 25px; margin-bottom: 15px; }
+    .category-card { flex: 1 1 100%; }
 }
-/* Ad Section */
+
+/* ===== 6. Post Content Styles ===== */
+section.all-post {
+    margin-top: 40px;
+}
+
+.all-post {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.post-content {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.post-content-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px 0;
+    max-width: 1200px;
+}
+
+.post-card {
+    flex: 1 1 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.post-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 1px dotted gray;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.post-text {
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-family: "Padauk", serif;
+}
+
+.post-text a {
+    font-family: "Padauk", serif;
+    text-align: justify;
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.post-text p {
+    text-align: justify;
+}
+
+.post-text img {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+    cursor: pointer;
+}
+
+.post-text img:hover {
+    opacity: 0.7;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .post-text img {
+        width: 300px;
+    }
+}
+
+/* ===== 7. Ad Section ===== */
 .ad {
     padding: 50px 0;
-    background: #0073e6; /* Background color */
-    color: #fff; /* Text color */
+    background: #0073e6;
+    color: #fff;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .ad h2 {
@@ -744,33 +509,17 @@ html {
     background: #ff0000; /* YouTube Red */
     color: #fff;
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
 }
 
 .ad .btn:hover {
-    background: #cc0000; /* Darker Red on Hover */
+    background: #cc0000; /* Darker Red */
 }
 
 .ad .btn i {
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px;
 }
 
-/* Responsive Design for Small Screens */
-@media (max-width: 768px) {
-    .categories h2 {
-    font-size: 25px;
-    margin-bottom: 15px;
-    color: #333;
-}
-    .category-card {
-        flex: 1 1 100%; /* Full width on mobile */
-    }
-}
-
-/* Video Slider */
+/* ===== 8. Slider Styles ===== */
 .slider {
     position: relative;
     max-width: 800px;
@@ -784,15 +533,13 @@ html {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-.slide {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
 
 .slide {
     min-width: 100%;
     position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .slide img {
@@ -826,33 +573,27 @@ html {
     cursor: pointer;
     font-size: 1.5rem;
     border-radius: 50%;
-    transition: background 0.3s ease;
     width: 40px;
     height: 40px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.3s ease;
 }
+
+.prev { left: 10px; }
+.next { right: 10px; }
 
 .prev:hover, .next:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-
-/* Contact Section */
+/* ===== 9. Contact Section ===== */
 .contact {
     padding: 50px 0;
     background: #f9f9f9;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .contact h2 {
@@ -866,6 +607,9 @@ html {
     font-size: 1.2rem;
     color: #555;
     margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-links {
@@ -883,7 +627,6 @@ html {
     padding: 15px 30px;
     border-radius: 10px;
     text-decoration: none;
-    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .contact-link:hover {
@@ -901,7 +644,6 @@ html {
     font-weight: bold;
 }
 
-/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
     .contact-links {
         flex-direction: column;
@@ -914,35 +656,20 @@ html {
     }
 }
 
-/* Back to Top Button */
-#backToTopBtn {
-    display: none; /* Hidden by default */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    background: #0073e6;
+/* ===== 10. Footer ===== */
+footer {
+    background: #111184;
     color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
 }
 
-#backToTopBtn:hover {
-    background: #005bb5;
-    transform: scale(1.1);
+footer p {
+    margin: 0;
 }
 
-#backToTopBtn i {
-    margin-top: 5px;
-}
-
-/* Post Navigation Styles */
+/* ===== 11. Post Navigation Styles ===== */
 .post-navigation {
     padding: 50px 0;
     background: #f9f9f9;
@@ -969,11 +696,6 @@ html {
     color: #0073e6;
 }
 
-.post-navigation .nav-link i {
-    font-size: 1.5rem;
-    margin: 0 10px;
-}
-
 .post-navigation .nav-content {
     display: flex;
     flex-direction: column;
@@ -991,16 +713,9 @@ html {
     margin: 0;
 }
 
-/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
-    
     .post-navigation .nav-links {
-        display: flex;
         gap: 30px;
-    }
-
-    .post-navigation .nav-link {
-        justify-content: space-between;
     }
 
     .post-navigation .prev-post {
@@ -1018,18 +733,218 @@ html {
     }
 }
 
-/* Footer */
-footer {
-    background: #111184;
+/* ===== 12. Modal Styles ===== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    padding-top: 40px;
+    display: block;
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 5px;
+    animation: zoomIn 0.3s ease-in-out;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+}
+
+@media (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* ===== 13. Search Bar Styles ===== */
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.search-container i {
+    font-size: 18px;
+    color: #777;
+    margin-right: 10px;
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+}
+
+.search-container input::placeholder {
+    color: #999;
+}
+
+.sbutton {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+    background: #0073e6;
     color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sbutton:hover {
+    background: #005bb5;
+}
+
+.sbutton i {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        display: none;
+        position: absolute;
+        right: 20px;
+        width: auto;
+        z-index: 1000;
+        margin-right: 90px;
+    }
+
+    .search-container.active {
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .sbutton {
+        display: flex;
+    }
+
+    .logo.hide {
+        display: none;
+    }
+
+    .sbutton.active i {
+        display: none;
+    }
+
+    .sbutton.active::after {
+        content: "\00d7";
+        font-size: 24px;
+        color: #fff;
+    }
+}
+
+/* No Results Message */
+.no-results-message {
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 20px;
+    display: none;
 }
 
-footer p {
-    margin: 0;
+/* ===== 14. Filter Styles ===== */
+.filter {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 100px;
+    margin-right: 100px;
 }
 
+.filter-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
 
+.filter-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #0073e6;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
 
+.filter-popup {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 150px;
+    padding: 10px;
+}
+
+.filter-popup .filter-option {
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    transition: background 0.3s ease;
+}
+
+.filter-popup .filter-option:hover {
+    background: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .filter {
+        margin-bottom: 80px;
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* ===== 15. Animations ===== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
