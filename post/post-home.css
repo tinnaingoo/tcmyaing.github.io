@@ -334,7 +334,16 @@ nav ul li a:hover {
 .ad .btn i {
     margin-right: 10px;
 }
-
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3sease, transform 0.3sease;
+}
 /* ===== 7. Slider Styles ===== */
 /* Video Slider */
 .videos {
