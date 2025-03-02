@@ -184,6 +184,13 @@ nav ul li a:hover {
     color: #777;
     margin-bottom: 20px;
 }
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ===== 11. Post Navigation Styles ===== */
 .post-navigation {
     padding: 50px 0;
