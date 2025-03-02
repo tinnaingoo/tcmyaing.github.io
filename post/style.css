@@ -439,6 +439,12 @@ section.all-post {
 
 /* ===== 7. Slider Styles ===== */
 /* Video Slider */
+.videos {
+    padding: 50px 0;
+    text-align: center;
+    background: #f4f4f4;
+}
+
 .slider {
     position: relative;
     max-width: 800px;
