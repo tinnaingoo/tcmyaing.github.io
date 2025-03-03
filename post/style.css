@@ -32,9 +32,11 @@ h1, h2, h3 {
 }
 
 .aside {
-    flex: 0 0 25%; /* Desktop မှာ 25% */
+    flex: 0 0 25%;
     padding: 10px 0;
     text-align: center;
+    background: #fff;
+    margin-left: 5px;
 }
 
 /* Widget Socials Styles (Already in your CSS, keeping it consistent) */
@@ -99,6 +101,7 @@ h1, h2, h3 {
 
     .all-post, .aside {
         flex: 0 0 100%; /* Mobile မှာ 100% full width */
+        margin-left: 0px;
     }
 
     .widget-socials {
