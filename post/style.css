@@ -414,6 +414,11 @@ section.all-post {
 }
 
 @media (max-width: 768px) {
+    .post-meta {
+    font-size: 14px;
+    color: #777;
+    }
+    
     .post-content h2 {
         font-size: 1.5rem;
     }
