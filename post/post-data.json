@@ -1,4 +1,19 @@
 [
+       
+    {
+        "Category": "Technology Sharing",
+        "title": "Image Generate AI တွေအတွက် Prompt ရေးသားနည်း",
+        "Description": "ဒီနေ့ခေတ်မှာ နည်းပညာဆိုတာ ကျွန်တော်တို့ဘဝရဲ့ အစိတ်အပိုင်းတစ်ခုလို ဖြစ်နေပါပြီ။ မနက်အိပ်ရာထတဲ့အချိန်ကစလို့ ညအိပ်ချိန်ထိ ဖုန်းတွေ၊ ကွန်ပျူတာတွေ၊ အင်တာနက်တွေနဲ့ အဆက်အသွယ်မပြတ် ဖြတ်သန်းနေရတယ်။ ဒီနည်းပညာတွေထဲမှာ အခုနောက်ပိုင်း အထူးတလည် ထင်ရှားလာတဲ့ အရာတစ်ခုကတော့ AI လို့ခေါ်တဲ့ ဉာဏ်ရ...",
+        "ImageUrl":"https://i.pinimg.com/1200x/9b/04/ac/9b04ac7be90c02400e9bdbca1db20d78.jpg",
+        "ImageCaption": "Learning Windows Boot",
+        "Author": "tinnaingoo",
+        "Date": "March 2, 2025",
+        "PostUrl": "post/technology-sharing/image-generate-ai-prompt",
+        "NextPost-Title": "Computer ဆိုတာဘာလဲ",
+        "NextPost-Url": "post/technology-sharing/what-is-computer",
+        "PrePost-Title": "32 bit နဲ့ 64 bit က ဘာတွေကွာတာလဲ?",
+        "PrePost-Url": "post/technology-sharing/what-different-32bit-and-64bit"
+    },
     {
         "Category": "Technology Sharing",
         "title": "ယနေ့ခေတ် AI နည်းပညာများ",
