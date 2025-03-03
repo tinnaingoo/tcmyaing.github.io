@@ -1,3 +1,5 @@
+let currentFilter = null; // လက်ရှိ Filter လုပ်ထားတဲ့ Category ကို သိမ်းမယ်
+
 async function fetchAndDisplayPosts() {
     const loadingIndicator = document.getElementById('loadingIndicator');
     const postGrid = document.getElementById('post-content-grid');
@@ -46,7 +48,15 @@ async function fetchAndDisplayPosts() {
         document.querySelectorAll('.category-tag').forEach(tag => {
             tag.addEventListener('click', function () {
                 const selectedCategory = this.getAttribute('data-category');
-                filterPostsByCategory(selectedCategory);
+                if (currentFilter === selectedCategory) {
+                    // လက်ရှိ Filter ထားတာကို ပြန်နှိပ်ရင် Filter ပြန်ပြုတ်မယ်
+                    filterPostsByCategory('all');
+                    currentFilter = null;
+                } else {
+                    // အသစ် Filter လုပ်မယ်
+                    filterPostsByCategory(selectedCategory);
+                    currentFilter = selectedCategory;
+                }
             });
         });
     } catch (error) {
