@@ -1,4 +1,4 @@
-let currentFilter = null; // လက်ရှိ Filter လုပ်ထားတဲ့ Category ကို သိမ်းမယ်
+let currentFilter = null;
 
 async function fetchAndDisplayPosts() {
     const loadingIndicator = document.getElementById('loadingIndicator');
@@ -44,16 +44,13 @@ async function fetchAndDisplayPosts() {
         postGrid.innerHTML = postHTML;
         loadingIndicator.style.display = 'none';
 
-        // Category tags တွေကို clickable ဖြစ်အောင် လုပ်မယ်
         document.querySelectorAll('.category-tag').forEach(tag => {
             tag.addEventListener('click', function () {
                 const selectedCategory = this.getAttribute('data-category');
                 if (currentFilter === selectedCategory) {
-                    // လက်ရှိ Filter ထားတာကို ပြန်နှိပ်ရင် Filter ပြန်ပြုတ်မယ်
                     filterPostsByCategory('all');
                     currentFilter = null;
                 } else {
-                    // အသစ် Filter လုပ်မယ်
                     filterPostsByCategory(selectedCategory);
                     currentFilter = selectedCategory;
                 }
