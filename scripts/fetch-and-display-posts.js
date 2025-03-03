@@ -19,8 +19,8 @@ async function fetchAndDisplayPosts() {
         posts.forEach(post => {
             const categories = post.Category.join(' '); // Space-separated string for data-category
             const categoryDisplay = post.Category
-                .map(cat => `<span class="category-item" data-category="${cat}">${cat}</span>`)
-                .join(', '); // Comma-separated clickable categories
+                .map(cat => `<span class="category-tag" data-category="${cat}">${cat}</span>`)
+                .join(', '); // Comma-separated with span tags
 
             postHTML += `
                 <div class="post-card" data-category="${categories}">
@@ -28,7 +28,7 @@ async function fetchAndDisplayPosts() {
                         <img src="${post.ImageUrl}" alt="${post.ImageCaption}">
                     </div>
                     <div class="post-content">
-                        <div class="post-category">${categoryDisplay}</div>
+                        <span class="post-category">${categoryDisplay}</span>
                         <h2 class="post-title" style="text-align: center;">${post.title}</h2>
                         <p class="post-excerpt">${post.Description}</p>
                         <div class="post-footer">
@@ -42,11 +42,11 @@ async function fetchAndDisplayPosts() {
         postGrid.innerHTML = postHTML;
         loadingIndicator.style.display = 'none';
 
-        // Category items တွေကို clickable ဖြစ်အောင် လုပ်မယ်
-        document.querySelectorAll('.category-item').forEach(item => {
-            item.addEventListener('click', function () {
+        // Category tags တွေကို clickable ဖြစ်အောင် လုပ်မယ်
+        document.querySelectorAll('.category-tag').forEach(tag => {
+            tag.addEventListener('click', function () {
                 const selectedCategory = this.getAttribute('data-category');
-                filterPostsByCategory(selectedCategory); // Filter function ကို ခေါ်မယ်
+                filterPostsByCategory(selectedCategory);
             });
         });
     } catch (error) {
