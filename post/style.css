@@ -32,16 +32,21 @@ h1, h2, h3 {
 }
 
 .mysocial {
-    flex: 0 0 25%; /* Desktop မှာ 25% */
+    flex: 0 0 25%;
     padding: 10px 0;
-    background: #f4f4f4; /* Optional: Light background for distinction */
+    background: #f4f4f4;
     text-align: center;
+    margin-top: 30px;
 }
 
 @media (max-width: 768px) {
     .main-body {
         flex-direction: column; /* Mobile မှာ column ဖြစ်အောင် */
         width: 100%;
+    }
+    .mysocial {
+        padding: 10px 0;
+        margin-top: 0px;
     }
 
     .all-post, .mysocial {
