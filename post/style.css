@@ -44,7 +44,14 @@ h1, h2, h3 {
     text-align: center;
 }
 
-
+.aside {
+    flex: 0 0 25%;
+    padding: 10px 0;
+    text-align: center;
+    background: #fff;
+    margin-left: 5px;
+    background: #fff;
+}
 
 /* Widget Socials Styles (Already in your CSS, keeping it consistent) */
 .widget-socials {
