@@ -18,9 +18,11 @@ h1, h2, h3 {
     justify-content: space-between;
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 40px;
     padding-top: 80px; /* Header ရဲ့ fixed position ကြောင့် margin-top */
 }
+
+
 
 .all-post {
     flex: 0 0 75%; /* Desktop မှာ 75% */
@@ -323,9 +325,6 @@ nav ul li a:hover {
 }
 
 
-section.all-post {
-    margin-top: 40px;
-}
 
 .all-post {
     padding: 10px 0;
