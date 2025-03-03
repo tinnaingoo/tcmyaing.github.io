@@ -161,7 +161,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #111184, #004d99);
+    background: #0073e6;
     color: #fff;
     flex-direction: column;
     animation: fadeIn 1s ease-in-out;
