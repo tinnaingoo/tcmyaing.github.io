@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC-Myaing Post</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/post/style.css">
+   
+    <!-- For Burmese Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300;400;500;600;700;800;900&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-box">
+        <div class="logo">
+            <img src="/images/logo-white.png" alt="Tech with TCM Logo">
+        </div>
+
+        <!-- Search Box -->
+        <div class="search">
+            <div class="search-container">
+                <i class="fa fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search..">
+            </div>
+            <div id="sbutton" class="sbutton">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav style="top: 60px;" id="navMenu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<section class="all-post">
+    <div class="container">
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loadingIndicator" style="text-align: center; padding: 20px;">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+        </div>
+        <div class="post-content-grid" id="post-content-grid">
+            <!-- Posts will be dynamically inserted here -->
+        </div>
+        <div id="noResultsMessage" class="no-results-message" style="display: none;">
+            No results found.
+        </div>
+    </div>
+</section>
+
+<section id="ad" class="ad">
+    <div class="container">
+        <div class="ad-content">
+            <h2>Subscribe to My YouTube Channel</h2>
+            <p>Stay updated with the latest tech tutorials, software reviews, and more!</p>
+            <a href="https://www.youtube.com/@tcmyaing" target="_blank" class="btn">
+                <i class="fab fa-youtube"></i> Subscribe Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="videos" class="videos">
+    <div class="container">
+        <!-- Image Auto Slider -->
+        <div class="slider">
+            <div class="slides">
+                <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="slide">
+                    <img src="/images/sample-img-1.jpeg" alt="Video 1">
+                    <div class="caption">Video Title 1</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="slide">
+                    <img src="/images/sample-img-2.jpeg" alt="Video 2">
+                    <div class="caption">Video Title 2</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="slide">
+                    <img src="/images/sample-img-3.jpg" alt="Video 3">
+                    <div class="caption">Video Title 3</div>
+                </a>
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+</section>    
+
+       
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email or social media.</p>
+        <div class="contact-links">
+            <a href="https://www.youtube.com/@tcmyaing" target="_blank" class="contact-link">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube Channel</span>
+            </a>
+            <a href="https://t.me/tcmyaing" target="_blank" class="contact-link">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram Channel</span>
+            </a>
+            <a href="mailto:tcmyaing@example.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>Email Me</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Filter Icon and Dropdown -->
+<!-- Filter Icon and Popup Menu -->    
+<section class="filter" id="filter">
+<div class="filter-container">
+    <div class="filter-icon" onclick="toggleFilterPopup()">
+        <i class="fas fa-filter"></i>
+    </div>
+    <div id="filterPopup" class="filter-popup">
+        <div class="filter-option" data-category="all">All</div>
+        <div class="filter-option" data-category="Technology Sharing">Technology Sharing</div>
+        <div class="filter-option" data-category="Computer Software">Computer Software</div>
+        <div class="filter-option" data-category="Phone Software">Phone Software</div>
+        <div class="filter-option" data-category="Ebooks">Ebook</div>
+        <!-- Add more categories as needed -->
+    </div>
+</div>
+</section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TC-Myaing | Design by Tin naing Oo.</p>
+        </div>
+    </footer>
+
+<script>
+    // Toggle Search Container on Mobile
+const sbutton = document.getElementById("sbutton");
+const searchContainer = document.querySelector(".search-container");
+const logo = document.querySelector(".logo");
+const searchInput = document.getElementById("searchInput");
+
+sbutton.addEventListener("click", function() {
+    searchContainer.classList.toggle("active");
+    logo.classList.toggle("hide");
+    sbutton.classList.toggle("active");
+
+    // Clear search input when closing the search container
+    if (!searchContainer.classList.contains("active")) {
+        searchInput.value = ""; // Clear the input field
+        filterPosts(); // Optionally, reset the filtered posts
+    }
+    
+});
+</script>
+<script src="/scripts/nav-toggle.js"></script>
+<script src="/scripts/image-auto-slider.js"></script>
+<script src="/scripts/fetch-and-display-posts.js"></script>
+<script src="/scripts/search-filtering.js"></script>        
+<script src="/scripts/category-filtering.js"></script>        
+
+
+<!-- Invoke your consent functions when a user interacts with your banner -->
+</body>
+</html>
