@@ -38,6 +38,82 @@ h1, h2, h3 {
     margin-top: 30px;
 }
 
+/* Widget Container */
+.widget.widget-socials {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Widget Title */
+.widget.widget-socials .widget-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Social Icons List */
+.widget.widget-socials .socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+}
+
+/* Individual Social Icon */
+.widget.widget-socials .socials li {
+    display: inline-block;
+}
+
+
+.widget.widget-socials .socials li a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.widget.widget-socials .socials li a .socials__text {
+    margin-left: 8px;
+    font-size: 0.9em;
+}
+
+/* Social Media Colors */
+.widget.widget-socials .social-facebook {
+    background-color: #3b5998;
+}
+
+.widget.widget-socials .social-twitter {
+    background-color: #1da1f2;
+}
+
+.widget.widget-socials .social-youtube {
+    background-color: #ff0000;
+}
+
+.widget.widget-socials .social-instagram {
+    background-color: #e1306c;
+}
+
+/* Hover Effects */
+.widget.widget-socials .socials li a:hover {
+    opacity: 0.8;
+}
+
 @media (max-width: 768px) {
     .main-body {
         flex-direction: column; /* Mobile မှာ column ဖြစ်အောင် */
