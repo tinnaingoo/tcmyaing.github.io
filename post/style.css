@@ -13,16 +13,15 @@ h1, h2, h3 {
 }
 
 /* Main Body Layout */
+/* Main Body Layout */
 .main-body {
     display: flex;
     justify-content: space-between;
     width: 90%;
     max-width: 1200px;
-    margin: auto;
-    padding-top: 40px; /* Header ရဲ့ fixed position ကြောင့် margin-top */
+    margin: 0 auto;
+    padding-top: 80px; /* Header ရဲ့ fixed position ကြောင့် margin-top */
 }
-
-
 
 .all-post {
     flex: 0 0 75%; /* Desktop မှာ 75% */
@@ -32,128 +31,83 @@ h1, h2, h3 {
 }
 
 .aside {
-    flex: 0 0 25%;
+    flex: 0 0 25%; /* Desktop မှာ 25% */
+    padding: 10px 0;
+    background: #f4f4f4; /* Optional: Light background for distinction */
     text-align: center;
-    margin-top: 30px;
 }
 
-/* Widget Container */
-.widget.widget-socials {
-    background-color: #ffffff;
+/* Widget Socials Styles (Already in your CSS, keeping it consistent) */
+.widget-socials {
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-/* Widget Title */
-.widget.widget-socials .widget-title {
-    font-size: 1.5em;
+.widget-title {
+    font-size: 1.5rem;
+    color: #0073e6;
     margin-bottom: 15px;
-    color: #333;
+    font-family: "Noto Sans Myanmar", serif;
 }
 
-/* Social Icons List */
-.widget.widget-socials .socials {
+.socials {
     list-style: none;
     padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    margin-bottom: 10px;
+}
+
+.socials a {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-direction: column;
-}
-
-/* Individual Social Icon */
-.widget.widget-socials .socials li {
-    display: inline-block;
-}
-
-
-.widget.widget-socials .socials li a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    text-align: left;
-    font-size: 14px;
+    align-items: center;
+    background: #0073e6;
     color: #fff;
-    line-height: 40px;
-    height: 40px;
-    padding: 0 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.widget.widget-socials .socials li a .socials__text {
-    margin-left: 8px;
-    font-size: 0.9em;
+.socials a:hover {
+    background: #005bb5;
+    transform: translateY(-2px);
 }
 
-/* Social Media Colors */
-.widget.widget-socials .social-facebook {
-    background-color: #3b5998;
+.socials i {
+    font-size: 1.2rem;
+    margin-right: 10px;
 }
 
-.widget.widget-socials .social-twitter {
-    background-color: #1da1f2;
+.socials__text {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Padauk", serif;
 }
 
-.widget.widget-socials .social-youtube {
-    background-color: #ff0000;
-}
-
-.widget.widget-socials .social-instagram {
-    background-color: #e1306c;
-}
-
-/* Hover Effects */
-.widget.widget-socials .socials li a:hover {
-    opacity: 0.8;
-}
-
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .main-body {
         flex-direction: column; /* Mobile မှာ column ဖြစ်အောင် */
         width: 100%;
     }
-    .aside {
-        padding: 10px 0;
-        margin-top: 0px;
-    }
 
     .all-post, .aside {
         flex: 0 0 100%; /* Mobile မှာ 100% full width */
     }
-}
 
-.social-link {
-    display: flex;
-    align-items: center;
-    background: #0073e6;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    margin: 10px 0;
-}
+    .widget-socials {
+        margin-top: 10px; /* Mobile မှာ သုံးရလွယ်ပါ */
+    }
 
-.social-link:hover {
-    background: #005bb5;
-    transform: translateY(-5px);
-}
-
-.social-link i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
-
-.social-link span {
-    font-size: 1.1rem;
-    font-weight: bold;
+    .socials a {
+        padding: 8px 12px; /* Mobile မှာ သုံးရလွယ်ပါ */
+    }
 }
 
 /* Font Classes */
