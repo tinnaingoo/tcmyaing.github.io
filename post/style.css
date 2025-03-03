@@ -50,6 +50,7 @@ h1, h2, h3 {
     text-align: center;
     background: #fff;
     margin-left: 5px;
+    background: #fff;
 }
 
 /* Widget Socials Styles (Already in your CSS, keeping it consistent) */
@@ -138,8 +139,7 @@ h1, h2, h3 {
 /* Widget Ad Styles */
 .widget-ad {
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 5px;
     margin-top: 20px;
 }
 
