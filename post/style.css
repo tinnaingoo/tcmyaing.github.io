@@ -648,6 +648,16 @@ section.all-post {
 }
 
 /* ===== 14. Filter Styles ===== */
+.category-item {
+    cursor: pointer;
+    color: #007bff; /* နှိပ်လို့ရမှန်း သိအောင် အရောင်ထည့်ထားတယ် */
+    margin-right: 5px;
+}
+
+.category-item:hover {
+    text-decoration: underline; /* Hover လုပ်တဲ့အခါ မျဉ်းသားပေးမယ် */
+}
+
 .filter {
     position: fixed;
     right: 0;
