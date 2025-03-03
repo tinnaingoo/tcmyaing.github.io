@@ -18,7 +18,7 @@ h1, h2, h3 {
     justify-content: space-between;
     width: 90%;
     max-width: 1200px;
-    padding-top: 80px; /* Header ရဲ့ fixed position ကြောင့် margin-top */
+    padding-top: 40px; /* Header ရဲ့ fixed position ကြောင့် margin-top */
 }
 
 
