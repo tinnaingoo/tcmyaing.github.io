@@ -7,12 +7,10 @@ body {
     font-family: "Padauk", "Noto Sans Myanmar", serif;
     scroll-behavior: smooth;
     background: #ffffff, /* Solid white background */
-                url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150"%3E%3Cpath d="M0 50 Q50 30 100 50 T150 30 T200 50 T250 30 T300 50" fill="none" stroke="rgba(0, 119, 204, 0.1)" stroke-width="2"/%3E%3C/svg%3E');
-    background-size: 100% 100%, 300px 150px; /* White full cover, waves repeat every 300px width, 150px height */
+                url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"%3E%3Cpath d="M0 100 Q50 50 100 100 T200 100" fill="none" stroke="rgba(0, 119, 204, 0.05)" stroke-width="2"/%3E%3Cpath d="M0 110 Q50 60 100 110 T200 110" fill="none" stroke="rgba(0, 119, 204, 0.05)" stroke-width="2"/%3E%3C/svg%3E');
+    background-size: 100% 100%, 200px 200px; /* White full cover, waves repeat every 200px */
     background-position: 0 0, 0 0;
-    background-repeat: repeat-x; /* Waves repeat horizontally */
 }
-
 h1, h2, h3 {
     font-family: "Noto Sans Myanmar", "Padauk", serif;
 }
