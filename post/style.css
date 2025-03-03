@@ -655,20 +655,16 @@ section.all-post {
     margin-right: 5px; /* Category တွေကြားမှာ အကွာအဝေး */
     font-size: 0.9em; /* စာလုံးအရွယ်အစား အနည်းငယ်သေးစေရန် */
     color: #007bff; /* စာသားအရောင် */
+    cursor: pointer; /* နှိပ်လို့ရမှန်း သိအောင် လက်ပုံစံ */
+}
+
+.category-tag:hover {
+    background-color: #b3e5fc; /* Hover တဲ့အခါ အနည်းငယ်မှောင်တဲ့အရောင် */
+    text-decoration: underline; /* Hover တဲ့အခါ မျဉ်းသားပေးမယ် */
 }
 
 .post-category {
     margin-bottom: 10px; /* Category နဲ့ အောက်က အကြောင်းအရာကြား အကွာအဝေး */
-}
-
-.category-item {
-    cursor: pointer;
-    color: #007bff; /* နှိပ်လို့ရမှန်း သိအောင် အရောင်ထည့်ထားတယ် */
-    margin-right: 5px;
-}
-
-.category-item:hover {
-    text-decoration: underline; /* Hover လုပ်တဲ့အခါ မျဉ်းသားပေးမယ် */
 }
 
 .filter {
