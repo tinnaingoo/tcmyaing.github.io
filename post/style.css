@@ -44,14 +44,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.aside {
-    flex: 0 0 25%;
-    padding: 10px 0;
-    text-align: center;
-    background: #fff;
-    margin-left: 5px;
-    background: #fff;
-}
+
 
 /* Widget Socials Styles (Already in your CSS, keeping it consistent) */
 .widget-socials {
@@ -134,43 +127,6 @@ h1, h2, h3 {
         padding: 8px 12px; /* Mobile မှာ သုံးရလွယ်ပါ */
     }
 }
-
-
-/* Main Body Layout (Ensure .aside stays 25% on desktop, 100% on mobile) */
-.main-body {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 80px; /* Header ရဲ့ fixed position ကြောင့် margin-top */
-}
-
-.all-post {
-    flex: 0 0 75%; /* Desktop မှာ 75% */
-    padding: 10px 0;
-    background: #fff;
-    text-align: center;
-}
-
-.aside {
-    flex: 0 0 25%; /* Desktop မှာ 25% */
-    padding: 10px 0;
-    background: #f4f4f4; /* Optional: Light background for distinction */
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .main-body {
-        flex-direction: column; /* Mobile မှာ column ဖြစ်အောင် */
-        width: 100%;
-    }
-
-    .all-post, .aside {
-        flex: 0 0 100%; /* Mobile မှာ 100% full width */
-    }
-}
-
 
 
 
