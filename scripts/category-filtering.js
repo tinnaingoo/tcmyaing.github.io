@@ -12,22 +12,33 @@ function toggleFilterPopup() {
 // Category အလိုက် posts ကို filter လုပ်ဖို့ function
 function filterPostsByCategory(category) {
     const postGrid = document.getElementById('post-content-grid');
+    const noResultsMessage = document.getElementById('noResultsMessage');
+
     if (!postGrid) {
         console.error('Post grid not found.');
         return;
     }
 
     const postCards = postGrid.getElementsByClassName('post-card');
+    let hasResults = false;
 
     Array.from(postCards).forEach(postCard => {
-        const postCategory = postCard.querySelector('.post-category').textContent;
+        // data-category ကို ဖတ်ပြီး space နဲ့ ခွဲထားတဲ့ array အဖြစ် ပြောင်းမယ်
+        const categories = postCard.getAttribute('data-category').split(' ');
 
-        if (category === 'all' || postCategory === category) {
+        // Category က 'all' ဖြစ်တာပဲဖြစ်ဖြစ်၊ ရွေးထားတဲ့ category က post ရဲ့ categories ထဲမှာ ပါတာပဲဖြစ်ဖြစ် ပြမယ်
+        if (category === 'all' || categories.includes(category)) {
             postCard.style.display = 'block';
+            hasResults = true;
         } else {
             postCard.style.display = 'none';
         }
     });
+
+    // ရလဒ်မရှိရင် မက်ဆေ့ချ် ပြမယ်
+    if (noResultsMessage) {
+        noResultsMessage.style.display = hasResults ? 'none' : 'block';
+    }
 }
 
 // Filter option တွေကို click လုပ်ရင် filter လုပ်ဖို့
