@@ -81,6 +81,14 @@ h1, h2, h3 {
     transform: translateY(-2px);
 }
 
+ .socials .social-facebook {
+    background-color: #3b5998;
+}
+
+.socials .social-youtube {
+    background-color: #ff0000;
+}
+
 .socials i {
     font-size: 1.2rem;
     margin-right: 10px;
