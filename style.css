@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #f9f9f9;
+    color: #F8F8F8;
     font-family: "Padauk", "Noto Sans Myanmar", serif; /* Added fallback */
     scroll-behavior: smooth; /* Moved from html */
 }
