@@ -31,9 +31,8 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.mysocial {
+.aside {
     flex: 0 0 25%;
-    padding: 10px 0;
     background: #f4f4f4;
     text-align: center;
     margin-top: 30px;
@@ -44,12 +43,12 @@ h1, h2, h3 {
         flex-direction: column; /* Mobile မှာ column ဖြစ်အောင် */
         width: 100%;
     }
-    .mysocial {
+    .aside {
         padding: 10px 0;
         margin-top: 0px;
     }
 
-    .all-post, .mysocial {
+    .all-post, .aside {
         flex: 0 0 100%; /* Mobile မှာ 100% full width */
     }
 }
