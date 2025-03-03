@@ -660,12 +660,18 @@ section.all-post {
 
 .category-tag:hover {
     background-color: #b3e5fc; /* Hover တဲ့အခါ အနည်းငယ်မှောင်တဲ့အရောင် */
-    text-decoration: underline; /* Hover တဲ့အခါ မျဉ်းသားပေးမယ် */
+}
+
+.category-tag.highlighted {
+    background-color: #0288d1; /* Highlight အတွက် ပိုမှောင်တဲ့အရောင် */
+    color: white; /* စာသားအရောင် အဖြူရောင် */
+    font-weight: bold; /* စာလုံးကို ပိုထင်းအောင် */
 }
 
 .post-category {
     margin-bottom: 10px; /* Category နဲ့ အောက်က အကြောင်းအရာကြား အကွာအဝေး */
 }
+
 
 .filter {
     position: fixed;
