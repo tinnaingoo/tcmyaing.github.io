@@ -1,5 +1,3 @@
-// ===== 1. Fetch and Display Posts =====
-// JSON ကနေ post တွေကို ဆွဲယူပြီး ပြသဖို့ function
 async function fetchAndDisplayPosts() {
     const loadingIndicator = document.getElementById('loadingIndicator');
     const postGrid = document.getElementById('post-content-grid');
@@ -19,13 +17,17 @@ async function fetchAndDisplayPosts() {
 
         let postHTML = '';
         posts.forEach(post => {
+            // Category array ကို string အဖြစ် ပြောင်းပြီး data-category ထဲ ထည့်မယ်
+            const categories = post.Category.join(' '); // ဥပမာ: "Technology Sharing Computer"
+            const categoryDisplay = post.Category.join(', '); // ဥပမာ: "Technology Sharing, Computer"
+
             postHTML += `
-                <div class="post-card" data-category="${post.Category}">
+                <div class="post-card" data-category="${categories}">
                     <div class="post-image">
                         <img src="${post.ImageUrl}" alt="${post.ImageCaption}">
                     </div>
                     <div class="post-content">
-                        <span class="post-category">${post.Category}</span>
+                        <span class="post-category">${categoryDisplay}</span>
                         <h2 class="post-title" style="text-align: center;">${post.title}</h2>
                         <p class="post-excerpt">${post.Description}</p>
                         <div class="post-footer">
@@ -45,6 +47,4 @@ async function fetchAndDisplayPosts() {
     }
 }
 
-// Page load တဲ့အခါ posts ကို fetch လုပ်ဖို့
 document.addEventListener('DOMContentLoaded', fetchAndDisplayPosts);
-
