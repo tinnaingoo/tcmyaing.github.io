@@ -648,6 +648,19 @@ section.all-post {
 }
 
 /* ===== 14. Filter Styles ===== */
+.category-tag {
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 2px 6px; /* အတွင်းအကွာအဝေး */
+    border-radius: 4px; /* ထောင့်များကို ချောမွေ့စေရန် */
+    margin-right: 5px; /* Category တွေကြားမှာ အကွာအဝေး */
+    font-size: 0.9em; /* စာလုံးအရွယ်အစား အနည်းငယ်သေးစေရန် */
+    color: #007bff; /* စာသားအရောင် */
+}
+
+.post-category {
+    margin-bottom: 10px; /* Category နဲ့ အောက်က အကြောင်းအရာကြား အကွာအဝေး */
+}
+
 .category-item {
     cursor: pointer;
     color: #007bff; /* နှိပ်လို့ရမှန်း သိအောင် အရောင်ထည့်ထားတယ် */
