@@ -1,10 +1,10 @@
 [
        
     {
-        "Category": "Technology Sharing",
+        "Category": ["Technology Sharing", "Computer"],
         "title": "Image Generate AI တွေအတွက် Prompt ရေးသားနည်း",
-        "Description":"ကမ္ဘာကြီးရဲ့ အပြောင်းအလဲတွေကြားမှာ လူသားတွေရဲ့ ဖန်တီးနိုင်စွမ်းဟာလည်း အံ့သြစရာကောင်းလောက်အောင် တိုးတက်လာခဲ့ပါတယ်။ အဲဒီထဲမှာမှ ဉာဏ်ရည်တု (AI) နည်းပညာရဲ့ အခန်းကဏ္ဍကတော့ ထူးခြားစွာ ပေါ်လွင်နေပါတယ်။ AI တွေဟာ လူသားတွေလိုပဲ သင်ယူနိုင်၊ တွေးခေါ်နိုင်ပြီး အံ့သြဖွယ်ကောင်းတဲ့ အရာတွေကို ဖန်တီးနိုင်လာပါပြီ။ အဲဒီထဲကမှ AI တွေနဲ့ ပုံရိပ်တွေကို ဖန်တီးနိုင်တဲ့ နည်းပညာကတော့ လူတွေကို အံ့အားသင့်စေခဲ့...",
-        "ImageUrl":"https://i.pinimg.com/1200x/11/24/a9/1124a9fa3b867d9be203402bceca8b53.jpg",
+        "Description": "ကမ္ဘာကြီးရဲ့ အပြောင်းအလဲတွေကြားမှာ လူသားတွေရဲ့ ဖန်တီးနိုင်စွမ်းဟာလည်း အံ့သြစရာကောင်းလောက်အောင် တိုးတက်လာခဲ့ပါတယ်။ ...",
+        "ImageUrl": "https://i.pinimg.com/1200x/11/24/a9/1124a9fa3b867d9be203402bceca8b53.jpg",
         "ImageCaption": "Learning Windows Boot",
         "Author": "tinnaingoo",
         "Date": "March 2, 2025",
@@ -15,21 +15,20 @@
         "PrePost-Url": "post/technology-sharing/what-different-32bit-and-64bit"
     },
     {
-        "Category": "Technology Sharing",
+        "Category": ["Technology Sharing", "AI", "Computer"],
         "title": "ယနေ့ခေတ် AI နည်းပညာများ",
-        "Description": "ဒီနေ့ခေတ်မှာ နည်းပညာဆိုတာ ကျွန်တော်တို့ဘဝရဲ့ အစိတ်အပိုင်းတစ်ခုလို ဖြစ်နေပါပြီ။ မနက်အိပ်ရာထတဲ့အချိန်ကစလို့ ညအိပ်ချိန်ထိ ဖုန်းတွေ၊ ကွန်ပျူတာတွေ၊ အင်တာနက်တွေနဲ့ အဆက်အသွယ်မပြတ် ဖြတ်သန်းနေရတယ်။ ဒီနည်းပညာတွေထဲမှာ အခုနောက်ပိုင်း အထူးတလည် ထင်ရှားလာတဲ့ အရာတစ်ခုကတော့ AI လို့ခေါ်တဲ့ ဉာဏ်ရ...",
-        "ImageUrl":"https://i.pinimg.com/1200x/9b/04/ac/9b04ac7be90c02400e9bdbca1db20d78.jpg",
+        "Description": "ဒီနေ့ခေတ်မှာ နည်းပညာဆိုတာ ကျွန်တော်တို့ဘဝရဲ့ အစိတ်အပိုင်းတစ်ခုလို ဖြစ်နေပါပြီ။ ...",
+        "ImageUrl": "https://i.pinimg.com/1200x/9b/04/ac/9b04ac7be90c02400e9bdbca1db20d78.jpg",
         "ImageCaption": "Learning Windows Boot",
         "Author": "tinnaingoo",
         "Date": "March 2, 2025",
         "PostUrl": "post/technology-sharing/today-and-artificial-intelligence",
         "NextPost-Title": "Computer ဆိုတာဘာလဲ",
         "NextPost-Url": "post/technology-sharing/what-is-computer",
-        "PrePost-Title": "32 bit နဲ့ 64 bit က ဘာတွေကွာတာလဲ?",
         "PrePost-Url": "post/technology-sharing/what-different-32bit-and-64bit"
     },
     {
-        "Category": "Technology Sharing",
+        "Category": ["Technology Sharing", "Computer"],
         "title": "Window boot ကိုလေ့လာခြင်း",
         "Description": "ကွန်ပျူတာသုံးသူအများစုမှာ Windows OS ကိုသုံးကြပါသည်။ OS မတက်တော့သည့်အခါ စိတ်ဆင်းရဲကြ ရသည်။ မိမိက ဘာတစ်ခုမှ မလုပ်တတ်လျှင် Service ကိုပို့ရလိမ့်မည်။ ရှေ့မှာတန်းစီနေသော ကွန် ပျူတာများရှိလျှင် သုံးရက်ခန့်စောင့်...",
         "ImageUrl":"https://i.pinimg.com/1200x/a7/c3/ea/a7c3ea20c35551ccd46fcfb9836a615b.jpg",
@@ -43,7 +42,7 @@
         "PrePost-Url": "post/technology-sharing/what-different-32bit-and-64bit"
     },
     {
-        "Category": "Technology Sharing",
+        "Category": ["Technology Sharing", "Computer"],
         "title": "32 bit နဲ့ 64 bit က ဘာတွေကွာတာလဲ?",
         "Description": "နည်းပညာသည် ယနေ့ခေတ် ကမ္ဘာကြီးတွင် အရေးပါသော အခန်းကဏ္ဍမှ ပါဝင်နေပြီး လူ့ဘဝ၏ နေ့စဉ်လုပ်ငန်းဆောင်တာများကို လွယ်ကူချောမွေ့စေရုံသာမက လူမှုစီးပွားဘဝကိုပါ ပြောင်းလဲတိုးတက်စေနိုင်သည့် ပညာတစ်ရပ်...",
         "ImageUrl":"https://i.pinimg.com/1200x/da/99/98/da999890c4e3385daac0b30c7734d098.jpg",
@@ -58,7 +57,7 @@
     },
 
     {
-        "Category": "Technology Sharing",
+        "Category": ["Technology Sharing", "Computer"],
         "title": "Why should you be interested in technology?",
         "Description": "နည်းပညာသည် ယနေ့ခေတ် ကမ္ဘာကြီးတွင် အရေးပါသော အခန်းကဏ္ဍမှ ပါဝင်နေပြီး လူ့ဘဝ၏ နေ့စဉ်လုပ်ငန်းဆောင်တာများကို လွယ်ကူချောမွေ့စေရုံသာမက လူမှုစီးပွားဘဝကိုပါ ပြောင်းလဲတိုးတက်စေနိုင်သည့် ပညာတစ်ရပ်...",
         "ImageUrl": "https://i.pinimg.com/1200x/2b/ee/a9/2beea9e54f8d110dea10ac85636e2f44.jpg",
@@ -72,7 +71,7 @@
         "PrePost-Url": "post/technology-sharing/about-computer-keyboard"
     },
     {
-        "Category": "Technology Sharing",
+        "Category": ["Technology Sharing","Computer"],
         "title": "Computer ဆိုတာဘာလဲ",
         "Description": "ကွန်ပျူတာ ဆိုသည်မှာ ဒေတာများ သိမ်းဆည်းရန် နှင့် တွက်ချက်ရန် အသုံးပြုသော လျှပ်စစ်ပစ္စည်းဖြစ်သည်။ စာရွက်စာတမ်းများ နှင့် စာရင်းဇယားများပြုလုပ်ခြင်း၊ email ပို့ခြင်း၊ Game ဆော့ခြင်း၊ Internet အသုံးပြုခြင်း နှင့် အခြားသောလုပ်ငန်းဆောင်တာများတွင် အသုံးပြုကြသည်။...",
         "ImageUrl": "https://i.pinimg.com/1200x/d2/e3/d7/d2e3d70daea2a86a742311ca1f7584b7.jpg",
@@ -86,7 +85,7 @@
         "PrePost-Url": "post/technology-sharing/about-computer-keyboard"
     },
     {
-        "Category": "Technology Sharing",
+        "Category": ["Technology Sharing", "Computer"],
         "title": "ကွန်ပျူတာကီးဘုတ် (Computer Keyboard) အကြောင်း",
         "Description": "ကွန်ပျူတာကီးဘုတ်သည် ကွန်ပျူတာစနစ်တစ်ခုအတွက် အရေးပါသော Input Device တစ်ခုဖြစ်သည်။ ကီးဘုတ်မှတစ်ဆင့် စာရိုက်ခြင်း၊ ကွန်ပျူတာကို ထိန်းချုပ်ခြင်း၊ နှင့် အခြားလုပ်ဆောင်ချက်များကို လုပ်ဆောင်နိုင်သည်။ ကီးဘုတ်များသည် နည်းပညာတိုးတက်မှုနှင့်အတူ အမျိုးအစား...",
         "ImageUrl": "https://i.pinimg.com/1200x/32/5e/e0/325ee0d8d14e60a33264a49cfb3dca42.jpg",
@@ -100,7 +99,7 @@
         "PrePost-Url": "post/technology-sharing/about-computer-os"
     },
     {
-        "Category": "Technology Sharing",
+        "Category": ["Technology Sharing", "Computer"],
         "title": "Operating System (OS) အကြောင်း",
         "Description": "ကွန်ပျူတာများသည် လူတို့၏ နေ့စဉ်ဘဝတွင် အရေးကြီးသော အကူအညီပေးပစ္စည်းဖြစ်လာပါသည်။ အဲဒီအတွက် ကွန်ပျူတာများကို အလုပ်လုပ်နိုင်စေရန် Operating System (OS) များလိုအပ်ပြီး OS များသည် hardware နှင့် software အကြား...",
         "ImageUrl": "https://i.pinimg.com/1200x/8a/aa/dd/8aaaddd94e13c535d7580d2cf6e4c456.jpg",
