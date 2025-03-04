@@ -37,14 +37,6 @@ header {
     z-index: 1000;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-.header-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 header .header-box h1 {
     font-size: 20px;
@@ -150,10 +142,26 @@ nav ul li a:hover {
 }
 
 /* =======  Search Bar + Dropdown Styling  =======*/
-.search {
-    position: relative;
+.header-box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 40px; /* Logo အရွယ်အစား သတ်မှတ်ထားလို့ ယူဆတယ် */
+}
+
+.search {
+    position: relative;
+    flex-grow: 1; /* Desktop မှာ ကျယ်လို့ရသလောက် ဖြည့်မယ် */
+    margin: 0 20px;
 }
 
 .search-container {
@@ -162,6 +170,7 @@ nav ul li a:hover {
     background-color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
+    width: 100%; /* Desktop မှာ ကျယ်လို့ရသလောက် */
 }
 
 .search-container i {
@@ -173,29 +182,29 @@ nav ul li a:hover {
     border: none;
     outline: none;
     padding: 5px;
-    width: 150px; /* Desktop အတွက် */
+    width: 100%; /* Container အတွင်းမှာ ဖြည့်မယ် */
 }
 
 .sbutton {
-    dislplay: none;
     cursor: pointer;
     padding: 5px 10px;
     background-color: #007bff;
     color: #fff;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
+    display: none; /* Default အနေနဲ့ Desktop မှာ ပျောက်မယ် */
 }
 
 .search-results {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 200px; /* Search bar ထက် အနည်းငယ် ပိုကျယ် */
+    width: 100%;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     max-height: 200px;
     overflow-y: auto;
-    display: none; /* Default အနေနဲ့ ဖွက်ထားမယ် */
+    display: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -221,16 +230,32 @@ nav ul li a:hover {
     font-style: italic;
 }
 
-/* Mobile အတွက် */
+/* Mobile အတွက် (768px အောက် ယူဆထားတယ်) */
 @media (max-width: 768px) {
+    .header-box {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .search-container {
+        display: none; /* Mobile မှာ default အနေနဲ့ ပျောက်မယ် */
+    }
+
     .sbutton {
-        dislplay:block;
+        display: block; /* Mobile မှာ ပေါ်မယ် */
     }
-    #searchInput {
-        width: 100px;
+
+    .search.active .search-container {
+        display: flex; /* sbutton နှိပ်ရင် ပေါ်မယ် */
+        width: 100%;
+        margin-top: 10px;
     }
-    .search-results {
-        width: 150px;
+
+    .search.active .logo {
+        display: none; /* sbutton နှိပ်ရင် logo ပျောက်မယ် */
     }
 }
 
