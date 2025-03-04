@@ -15,8 +15,8 @@
         "caption": "Video Title 3"
     },
     {
-        "imageUrl": "/images/sample-img-4.jpg",
-        "linkUrl": "https://www.youtube.com/watch?v=example4",
-        "caption": "Video Title 4"
+        "imageUrl": "https://i.ytimg.com/vi/9YhfYBQ3wJg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBMHrVKNHTw_diiog1-SGDLyHpHog",
+        "linkUrl": "https://youtu.be/9YhfYBQ3wJg?si=hZJj-TiVi3nEtJEE",
+        "caption": "How to view the Wifi Password connected to the computer?"
     }
 ]
