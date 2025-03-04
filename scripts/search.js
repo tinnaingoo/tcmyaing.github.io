@@ -7,7 +7,7 @@ async function initSearch() {
     const searchResults = document.getElementById('searchResults');
     const headerLogo = document.getElementById('headerLogo');
     const searchBox = document.querySelector('.search');
-    const divid = document.querySelector('divid');
+    const divid = document.getElementById('divid');
 
     let postsData = [];
     let isSearchActive = false;
