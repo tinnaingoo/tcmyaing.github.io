@@ -237,8 +237,9 @@ nav ul li a:hover {
 /* Mobile အတွက် */
 @media (max-width: 768px) {
     .header-box {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         position: relative;
+        display: flex;
     }
 
     .logo#headerLogo {
