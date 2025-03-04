@@ -571,6 +571,86 @@ section.post-content {
         width: 100%;
     }
 }
+/* =======  Search Bar + Dropdown Styling  =======*/
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.search-container i {
+    color: #666;
+    margin-right: 5px;
+}
+
+#searchInput {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 150px; /* Desktop အတွက် */
+}
+
+.sbutton {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px; /* Search bar ထက် အနည်းငယ် ပိုကျယ် */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none; /* Default အနေနဲ့ ဖွက်ထားမယ် */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.result-item {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Noto Sans Myanmar', sans-serif;
+}
+
+.result-item a:hover {
+    color: #007bff;
+}
+
+.no-results {
+    padding: 8px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Mobile အတွက် */
+@media (max-width: 768px) {
+    #searchInput {
+        width: 100px;
+    }
+    .search-results {
+        width: 150px;
+    }
+}
 
 /* =====  Subscribe to My Channel Section ===== */
 /* CSS ကို ဒီမှာ ထည့်ထားတယ်၊ လိုအပ်ရင် သီးသန့် .css ဖိုင်ထဲ ထည့်လို့ရတယ် */
