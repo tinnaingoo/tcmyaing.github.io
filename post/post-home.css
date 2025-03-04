@@ -143,14 +143,11 @@ nav ul li a:hover {
 
 /* =======  Search Bar + Dropdown Styling  =======*/
 .header-box {
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     position: relative;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .logo {
@@ -158,12 +155,12 @@ nav ul li a:hover {
 }
 
 .logo img {
-    height: 40px; /* Logo အရွယ်အစား သတ်မှတ်ထားလို့ ယူဆတယ် */
+    height: 40px; /* မင်းရဲ့ logo အရွယ်အစားပေါ် မူတည်ပြီး ပြင်လို့ရတယ် */
 }
 
 .search {
     position: relative;
-    flex-grow: 1; /* Desktop မှာ ကျယ်လို့ရသလောက် ဖြည့်မယ် */
+    flex-grow: 1;
     margin: 0 20px;
 }
 
@@ -173,7 +170,7 @@ nav ul li a:hover {
     background-color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    width: 70%; /* Desktop မှာ ကျယ်လို့ရသလောက် */
+    width: 100%;
 }
 
 .search-container i {
@@ -185,35 +182,31 @@ nav ul li a:hover {
     border: none;
     outline: none;
     padding: 5px;
-    width: 100%; /* Container အတွင်းမှာ ဖြည့်မယ် */
+    width: 100%;
 }
 
 .sbutton {
     cursor: pointer;
+    padding: 5px 10px;
     background-color: #007bff;
     color: #fff;
-    border-radius: 50%;
-    display: none;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    align-items: center;
+    border-radius: 5px;
+    display: none; /* Desktop မှာ ပျောက်မယ် */
 }
 
 .search-results {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 70%;
+    width: 100%;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 5px;
     max-height: 200px;
     overflow-y: auto;
     display: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    padding: 5px 10px;
 }
 
 .result-item {
@@ -237,37 +230,36 @@ nav ul li a:hover {
     font-style: italic;
 }
 
-/* Mobile အတွက် (768px အောက် ယူဆထားတယ်) */
+/* Mobile အတွက် */
 @media (max-width: 768px) {
     .header-box {
         flex-wrap: wrap;
+        position: relative;
     }
 
-    .logo {
-        display: block;
+    .logo#headerLogo {
+        display: block; /* Default မှာ ပေါ်မယ် */
     }
 
-    .search-container {
-        display: none; /* Mobile မှာ default အနေနဲ့ ပျောက်မယ် */
+    .search-container#searchContainer {
+        display: none; /* Default မှာ ပျောက်မယ် */
     }
 
-    .sbutton {
+    .sbutton#sbutton {
+        display: block; /* Mobile မှာ ပေါ်မယ် */
+    }
+
+    /* Active ဖြစ်တဲ့အခါ */
+    .search.active .search-container#searchContainer {
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .search.active .search-container {
-        display: flex; /* sbutton နှိပ်ရင် ပေါ်မယ် */
         width: 100%;
         margin-top: 10px;
     }
 
-    .search.active .logo {
-        display: none; /* sbutton နှိပ်ရင် logo ပျောက်မယ် */
+    .search.active .logo#headerLogo {
+        display: none !important; /* Logo သေချာပျောက်ဖို့ specificity မြှင့်မယ် */
     }
 }
-
 
 /* Main Body Layout */
 .main-body {
