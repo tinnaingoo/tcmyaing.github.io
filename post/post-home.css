@@ -192,15 +192,6 @@ nav ul li a:hover {
     width: 100%; /* Container အတွင်းမှာ ပြည့်အောင် */
 }
 
-.sbutton {
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    display: flex;
-    align-items: center;
-}
 
 .logo.hide {
     display: none; /* Mobile မှာ search ဖွင့်ရင် logo ဖွက်မယ် */
