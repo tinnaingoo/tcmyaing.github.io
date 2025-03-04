@@ -137,6 +137,7 @@ h1, h2, h3 {
 /* Widget Latest Posts */
 .widget-latest-posts {
     margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
