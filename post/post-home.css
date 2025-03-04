@@ -387,6 +387,16 @@ section.post-content {
     margin: 0;
 }
 
+.next-post {
+    display: flex;
+    align-items: flex-end;
+}
+
+.prev-post {
+    display: flex;
+    align-items: flex-start;
+}
+
 @media (max-width: 768px) {
     .post-navigation .nav-links {
         gap: 30px;
