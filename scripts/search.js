@@ -24,6 +24,8 @@ async function initSearch() {
         if (!isSearchActive) {
             // Search ကို ဖွင့်မယ်
             searchBox.classList.add('active');
+            headerLogo.style.display = 'none'; // Logo ပျောက်ဖို့ သေချာအောင်
+            searchContainer.style.display = 'flex'; // Search container ပေါ်ဖို့
             searchIcon.classList.remove('fa-search');
             searchIcon.classList.add('fa-close');
             searchInput.focus();
@@ -31,6 +33,8 @@ async function initSearch() {
         } else {
             // Search ကို ပိတ်မယ်
             searchBox.classList.remove('active');
+            headerLogo.style.display = 'block'; // Logo ပြန်ပေါ်ဖို့
+            searchContainer.style.display = 'none'; // Search container ပျောက်ဖို့
             searchIcon.classList.remove('fa-close');
             searchIcon.classList.add('fa-search');
             searchInput.value = ''; // Input ကို clear လုပ်မယ်
@@ -70,9 +74,10 @@ async function initSearch() {
     document.addEventListener('click', (e) => {
         if (!searchInput.contains(e.target) && !searchResults.contains(e.target) && !searchButton.contains(e.target)) {
             searchResults.style.display = 'none';
-            // Mobile မှာ ပိတ်ချင်ရင် ဒါကို ထည့်လို့ရတယ်
             if (window.innerWidth <= 768 && isSearchActive) {
                 searchBox.classList.remove('active');
+                headerLogo.style.display = 'block';
+                searchContainer.style.display = 'none';
                 searchIcon.classList.remove('fa-close');
                 searchIcon.classList.add('fa-search');
                 searchInput.value = '';
