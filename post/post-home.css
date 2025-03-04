@@ -149,6 +149,10 @@ h1, h2, h3 {
     align-items: flex-start;
 }
 
+ul#latestPostsList {
+    padding: 3px;
+}
+
 .latest-posts li {
     margin-bottom: 8px;
     display: flex;
