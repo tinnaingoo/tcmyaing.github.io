@@ -146,6 +146,9 @@ h1, h2, h3 {
 .latest-posts {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .latest-posts li {
@@ -155,8 +158,10 @@ h1, h2, h3 {
 .latest-posts a {
     text-decoration: none;
     color: #007bff;
+    text-align: justify;
+    display: flex
+;
 }
-
 .latest-posts a:hover {
     text-decoration: underline;
 }
