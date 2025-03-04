@@ -171,7 +171,7 @@ nav ul li a:hover {
     background-color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    width: 0; /* Default အနေနဲ့ ဖွက်ထားမယ် */
+    width: 100%; /* Default အနေနဲ့ ဖွက်ထားမယ် */
     overflow: hidden;
     transition: width 0.3s ease; /* Animation အတွက် */
 }
