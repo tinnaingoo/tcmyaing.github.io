@@ -177,6 +177,7 @@ nav ul li a:hover {
 }
 
 .sbutton {
+    dislplay: none;
     cursor: pointer;
     padding: 5px 10px;
     background-color: #007bff;
@@ -222,6 +223,9 @@ nav ul li a:hover {
 
 /* Mobile အတွက် */
 @media (max-width: 768px) {
+    .sbutton {
+        dislplay:block;
+    }
     #searchInput {
         width: 100px;
     }
