@@ -159,9 +159,9 @@ nav ul li a:hover {
 }
 
 .search {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    position: relative;
+    flex-grow: 1; /* Desktop မှာ ကျယ်လို့ရသလောက် ဖြည့်မယ် */
+    margin: 0 20px;
 }
 
 .search-container {
