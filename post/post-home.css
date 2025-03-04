@@ -152,6 +152,10 @@ nav ul li a:hover {
     margin: auto;
 }
 
+.divid {
+    width: 60%;
+}
+
 .logo {
     flex-shrink: 0;
 }
