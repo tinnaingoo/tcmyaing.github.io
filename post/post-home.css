@@ -25,6 +25,261 @@ h1, h2, h3 {
 .padauk-regular { font-family: "Padauk", serif; font-weight: 400; font-style: normal; }
 .padauk-bold { font-family: "Padauk", serif; font-weight: 700; font-style: normal; }
 
+/* ===== 2. Header Styles ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #111184, #004d99);
+    color: #fff;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .header-box h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Padauk", serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo img {
+    max-height: 50px; /* Changed to max-height for responsiveness */
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0073e6;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Default အနေနဲ့ ဖျောက်ထားတယ် */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger.active .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.hamburger.active .bar2 {
+    opacity: 0;
+}
+
+.hamburger.active .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: inline-block;
+    }
+
+    .logo img {
+        max-height: 30px;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        background: #0073e6;
+        transition: right 0.3s ease;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* =======  Search Bar + Dropdown Styling  =======*/
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 0; /* Default အနေနဲ့ ဖွက်ထားမယ် */
+    overflow: hidden;
+    transition: width 0.3s ease; /* Animation အတွက် */
+}
+
+.search-container.active {
+    width: 150px; /* Mobile မှာ ဖွင့်ရင် ဒီလောက် အကျယ်ပြမယ် */
+}
+
+.search-container i {
+    color: #666;
+    margin-right: 5px;
+}
+
+#searchInput {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%; /* Container အတွင်းမှာ ပြည့်အောင် */
+}
+
+.sbutton {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo.hide {
+    display: none; /* Mobile မှာ search ဖွင့်ရင် logo ဖွက်မယ် */
+}
+
+
+
+.sbutton {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+    background: #0073e6;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3sease;
+}
+
+
+
+/* Desktop အတွက် */
+@media (min-width: 769px) {
+    .sbutton {
+        display: flex;
+    }
+    .search-container {
+        display: none;
+    }
+    .logo.hide {
+        display: block; /* Desktop မှာ logo မဖွက်ဘူး */
+    }
+}
+
+/* Mobile အတွက် */
+@media (max-width: 768px) {
+    .search-results {
+        width: 150px;
+    }
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.result-item {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Noto Sans Myanmar', sans-serif;
+}
+
+.result-item a:hover {
+    color: #007bff;
+}
+
+.no-results {
+    padding: 8px;
+    color: #666;
+    font-style: italic;
+}
+
+
 /* Main Body Layout */
 .main-body {
     display: flex;
@@ -248,256 +503,6 @@ ul#latestPostsList {
 }
 
 
-/* ===== 2. Header Styles ===== */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(135deg, #111184, #004d99);
-    color: #fff;
-    padding: 15px 0;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-.header-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header .header-box h1 {
-    font-size: 20px;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-family: "Padauk", serif;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.logo img {
-    max-height: 50px; /* Changed to max-height for responsiveness */
-    margin-right: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #0073e6;
-}
-
-/* Hamburger Menu */
-.hamburger {
-    display: none; /* Default အနေနဲ့ ဖျောက်ထားတယ် */
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.hamburger.active .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-}
-
-.hamburger.active .bar2 {
-    opacity: 0;
-}
-
-.hamburger.active .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-}
-
-/* Mobile Menu */
-@media (max-width: 768px) {
-    .hamburger {
-        display: inline-block;
-    }
-
-    .logo img {
-        max-height: 30px;
-    }
-
-    nav {
-        position: absolute;
-        top: 70px;
-        right: -100%;
-        width: 100%;
-        background: #0073e6;
-        transition: right 0.3s ease;
-    }
-
-    nav.active {
-        right: 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-/* =======  Search Bar + Dropdown Styling  =======*/
-.header-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    position: relative;
-}
-
-.search {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    width: 0; /* Default အနေနဲ့ ဖွက်ထားမယ် */
-    overflow: hidden;
-    transition: width 0.3s ease; /* Animation အတွက် */
-}
-
-.search-container.active {
-    width: 150px; /* Mobile မှာ ဖွင့်ရင် ဒီလောက် အကျယ်ပြမယ် */
-}
-
-.search-container i {
-    color: #666;
-    margin-right: 5px;
-}
-
-#searchInput {
-    border: none;
-    outline: none;
-    padding: 5px;
-    width: 100%; /* Container အတွင်းမှာ ပြည့်အောင် */
-}
-
-.sbutton {
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    display: flex;
-    align-items: center;
-}
-
-.logo.hide {
-    display: none; /* Mobile မှာ search ဖွင့်ရင် logo ဖွက်မယ် */
-}
-
-.search-results {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 200px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    max-height: 200px;
-    overflow-y: auto;
-    display: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.result-item {
-    padding: 8px;
-    border-bottom: 1px solid #eee;
-}
-
-.result-item a {
-    text-decoration: none;
-    color: #333;
-    font-family: 'Noto Sans Myanmar', sans-serif;
-}
-
-.result-item a:hover {
-    color: #007bff;
-}
-
-.sbutton {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-right: 7px;
-    background: #0073e6;
-    color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3sease;
-}
-
-.no-results {
-    padding: 8px;
-    color: #666;
-    font-style: italic;
-}
-
-/* Desktop အတွက် */
-@media (min-width: 769px) {
-    .sbutton {
-        display: flex;
-    }
-    .search-container {
-        width: 150px; /* Desktop မှာ အမြဲပြထားမယ် */
-        display: none;
-    }
-    .logo.hide {
-        display: block; /* Desktop မှာ logo မဖွက်ဘူး */
-    }
-}
-
-/* Mobile အတွက် */
-@media (max-width: 768px) {
-    .search-results {
-        width: 150px;
-    }
-}
 
 
 /* ====== Post Style ==== */
