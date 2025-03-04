@@ -664,6 +664,38 @@ section.post-content {
     }
 }
 
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none; /* Default hidden */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: #005bb5;
+    transform: scale(1.1);
+}
+
+.back-to-top i {
+    font-size: 18px;
+}
+
+/* Show button when scrolled down */
+.back-to-top.show {
+    display: block;
+}
+
 
 /* ===== 10. Footer ===== */
 footer {
