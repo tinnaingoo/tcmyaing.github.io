@@ -654,60 +654,75 @@ section.post-content {
 
 
 /* ===== 9. Contact Section ===== */
-.contact {
-    padding: 50px 0;
-    background: #f9f9f9;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
-}
+/* CSS ကို ဒီမှာ ထည့်ထားတယ်၊ လိုအပ်ရင် သီးသန့် .css ဖိုင်ထဲ ထည့်လို့ရတယ် */
+        .contact-section {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-    font-family: "Noto Sans Myanmar", serif;
-}
+        .contact-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-.contact p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
+        .contact-section h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 15px;
+        }
 
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+        .contact-section p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 25px;
+        }
 
-.contact-link {
-    display: flex;
-    align-items: center;
-    background: #0073e6;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-}
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-.contact-link:hover {
-    background: #005bb5;
-    transform: translateY(-5px);
-}
+        .contact-link {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
 
-.contact-link i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
+        .contact-link i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
 
-.contact-link span {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
+        .contact-link:hover {
+            background-color: #007bff; /* အပြာရောင် hover effect */
+            color: #fff;
+        }
+
+        /* Specific platform colors ထည့်ချင်ရင် ဒီလို ပြင်လို့ရတယ် */
+        .contact-link.youtube:hover {
+            background-color: #ff0000; /* YouTube အနီရောင် */
+        }
+
+        .contact-link.telegram:hover {
+            background-color: #0088cc; /* Telegram အပြာရောင် */
+        }
+
+        .contact-link.email:hover {
+            background-color: #555; /* Email အတွက် မီးခိုးရောင် */
+        }
 
 @media (max-width: 768px) {
     .contact-links {
