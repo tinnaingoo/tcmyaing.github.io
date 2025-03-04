@@ -319,6 +319,7 @@ nav ul li a:hover {
 /* ====== Post Style ==== */
 section.post-content {
     margin-top: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .post-title-container {
