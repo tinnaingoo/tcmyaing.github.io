@@ -2,9 +2,14 @@
 async function initSearch() {
     const searchInput = document.getElementById('searchInput');
     const searchButton = document.getElementById('sbutton');
+    const searchIcon = document.getElementById('searchIcon');
+    const searchContainer = document.getElementById('searchContainer');
     const searchResults = document.getElementById('searchResults');
+    const headerLogo = document.getElementById('headerLogo');
+    const searchBox = document.querySelector('.search');
 
     let postsData = [];
+    let isSearchActive = false;
 
     // JSON ကနေ ဒေတာကို တစ်ခါတည်း ဖတ်ထားမယ်
     try {
@@ -14,10 +19,30 @@ async function initSearch() {
         console.error('Error loading post data:', error);
     }
 
+    // Mobile မှာ Search Button ကို toggle လုပ်မယ်
+    searchButton.addEventListener('click', () => {
+        if (!isSearchActive) {
+            // Search ကို ဖွင့်မယ်
+            searchBox.classList.add('active');
+            searchIcon.classList.remove('fa-search');
+            searchIcon.classList.add('fa-close');
+            searchInput.focus();
+            isSearchActive = true;
+        } else {
+            // Search ကို ပိတ်မယ်
+            searchBox.classList.remove('active');
+            searchIcon.classList.remove('fa-close');
+            searchIcon.classList.add('fa-search');
+            searchInput.value = ''; // Input ကို clear လုပ်မယ်
+            searchResults.style.display = 'none'; // Dropdown ပျောက်မယ်
+            isSearchActive = false;
+        }
+    });
+
     // Search input မှာ ရိုက်တိုင်း ရှာမယ်
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.trim().toLowerCase();
-        searchResults.innerHTML = ''; // ရှိပြီးသား ရလဒ်တွေကို ရှင်းမယ်
+        searchResults.innerHTML = '';
 
         if (query.length > 0) {
             const results = postsData.filter(post =>
@@ -35,39 +60,24 @@ async function initSearch() {
             } else {
                 searchResults.innerHTML = '<div class="no-results">No results found</div>';
             }
-            searchResults.style.display = 'block'; // Dropdown ပြမယ်
-        } else {
-            searchResults.style.display = 'none'; // ဘာမှ မရိုက်ရင် ဖွက်မယ်
-        }
-    });
-
-    // Search button နှိပ်ရင်လည်း အလုပ်လုပ်မယ်
-    searchButton.addEventListener('click', () => {
-        const query = searchInput.value.trim().toLowerCase();
-        if (query) {
-            searchResults.innerHTML = '';
-            const results = postsData.filter(post =>
-                post.title.toLowerCase().includes(query) ||
-                post.Description.toLowerCase().includes(query)
-            );
-            if (results.length > 0) {
-                results.forEach(post => {
-                    const resultItem = document.createElement('div');
-                    resultItem.className = 'result-item';
-                    resultItem.innerHTML = `<a href="/${post.PostUrl}.html">${post.title}</a>`;
-                    searchResults.appendChild(resultItem);
-                });
-            } else {
-                searchResults.innerHTML = '<div class="no-results">No results found</div>';
-            }
             searchResults.style.display = 'block';
+        } else {
+            searchResults.style.display = 'none';
         }
     });
 
     // Search bar အပြင်ဘက် နှိပ်ရင် dropdown ဖွက်မယ်
     document.addEventListener('click', (e) => {
-        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target) && !searchButton.contains(e.target)) {
             searchResults.style.display = 'none';
+            // Mobile မှာ ပိတ်ချင်ရင် ဒါကို ထည့်လို့ရတယ်
+            if (window.innerWidth <= 768 && isSearchActive) {
+                searchBox.classList.remove('active');
+                searchIcon.classList.remove('fa-close');
+                searchIcon.classList.add('fa-search');
+                searchInput.value = '';
+                isSearchActive = false;
+            }
         }
     });
 }
