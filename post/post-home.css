@@ -572,6 +572,14 @@ section.post-content {
     }
 }
 /* =======  Search Bar + Dropdown Styling  =======*/
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
 .search {
     position: relative;
     display: flex;
@@ -584,6 +592,13 @@ section.post-content {
     background-color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
+    width: 0; /* Default အနေနဲ့ ဖွက်ထားမယ် */
+    overflow: hidden;
+    transition: width 0.3s ease; /* Animation အတွက် */
+}
+
+.search-container.active {
+    width: 150px; /* Mobile မှာ ဖွင့်ရင် ဒီလောက် အကျယ်ပြမယ် */
 }
 
 .search-container i {
@@ -595,7 +610,7 @@ section.post-content {
     border: none;
     outline: none;
     padding: 5px;
-    width: 150px; /* Desktop အတွက် */
+    width: 100%; /* Container အတွင်းမှာ ပြည့်အောင် */
 }
 
 .sbutton {
@@ -604,19 +619,25 @@ section.post-content {
     background-color: #007bff;
     color: #fff;
     border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo.hide {
+    display: none; /* Mobile မှာ search ဖွင့်ရင် logo ဖွက်မယ် */
 }
 
 .search-results {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 200px; /* Search bar ထက် အနည်းငယ် ပိုကျယ် */
+    width: 200px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     max-height: 200px;
     overflow-y: auto;
-    display: none; /* Default အနေနဲ့ ဖွက်ထားမယ် */
+    display: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -642,16 +663,22 @@ section.post-content {
     font-style: italic;
 }
 
+/* Desktop အတွက် */
+@media (min-width: 769px) {
+    .search-container {
+        width: 150px; /* Desktop မှာ အမြဲပြထားမယ် */
+    }
+    .logo.hide {
+        display: block; /* Desktop မှာ logo မဖွက်ဘူး */
+    }
+}
+
 /* Mobile အတွက် */
 @media (max-width: 768px) {
-    #searchInput {
-        width: 100px;
-    }
     .search-results {
         width: 150px;
     }
 }
-
 /* =====  Subscribe to My Channel Section ===== */
 /* CSS ကို ဒီမှာ ထည့်ထားတယ်၊ လိုအပ်ရင် သီးသန့် .css ဖိုင်ထဲ ထည့်လို့ရတယ် */
         .subscribe-section {
