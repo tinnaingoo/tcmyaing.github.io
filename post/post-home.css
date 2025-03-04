@@ -103,6 +103,10 @@ h1, h2, h3 {
     background-color: #ff0000;
 }
 
+.socials .social-telegram {
+    background-color: #71C1F6;
+}
+
 .socials i {
     font-size: 1.2rem;
     margin-right: 10px;
