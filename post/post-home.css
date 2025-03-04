@@ -151,7 +151,7 @@ h1, h2, h3 {
     align-items: flex-start;
 }
 
-latest-posts li {
+.latest-posts li {
     margin-bottom: 8px;
     display: flex;
     flex-direction: row;
