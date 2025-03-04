@@ -184,6 +184,58 @@ ul#latestPostsList {
     color: #333; /* Marker ရဲ့ အရောင် */
 }
 
+/* ====== Categories Widget ====== */
+.widget-categories {
+    margin-bottom: 20px;
+}
+
+.widget-categories .widget-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Padauk', sans-serif;
+}
+
+.categories {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.categories li {
+    margin-bottom: 8px;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #007bff;
+    font-family: 'Noto Sans Myanmar', sans-serif;
+}
+
+.categories a:hover {
+    text-decoration: underline;
+}
+
+/* ====== About Section =====*/
+.about-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Padauk', sans-serif; /* မင်းရဲ့ လက်ရှိ ဖောင့်နဲ့ ကိုက်အောင် */
+}
+
+.about-section p {
+    font-size: 1.1em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Noto Sans Myanmar', sans-serif;
+}
+
 /* Container */
 .container {
     display: flex;
