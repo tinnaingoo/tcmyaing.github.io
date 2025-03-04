@@ -258,9 +258,10 @@ nav ul li a:hover {
     .search {
         position: relative;
         flex-grow: 1;
-        margin: 0 20px;
+        margin-left: 2px;
         display: flex;
         width: 50%;
+        margin-right: 3px;
     }
     .search-container#searchContainer {
         display: none; /* Default မှာ ပျောက်မယ် */
@@ -277,12 +278,12 @@ nav ul li a:hover {
     }
 
     /* Active ဖြစ်တဲ့အခါ */
-    .search.active .search-container#searchContainer {
+    .search.active .search-container #searchContainer {
         display: flex;
-        width: 100%;
-      
+        width: 75%;
+        margin-right: 6px;
     }
-
+    
     .search.active .logo#headerLogo {
         display: none !important; /* Logo သေချာပျောက်ဖို့ specificity မြှင့်မယ် */
     }
