@@ -2,7 +2,7 @@
 async function loadVideoSlider() {
     try {
         // JSON ဖိုင်ကို fetch လုပ်မယ်
-        const response = await fetch('/post/slider-data.json');
+        const response = await fetch('/slider-data.json');
         const sliderData = await response.json();
 
         // Slider container ကို ရှာမယ်
