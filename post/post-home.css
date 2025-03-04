@@ -271,7 +271,7 @@ nav ul li a:hover {
 }
 /* ====== Post Style ==== */
 section.post-content {
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 .post-title-container {
