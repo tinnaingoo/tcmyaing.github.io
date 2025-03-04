@@ -517,48 +517,53 @@ section.post-content {
 }
 
 /* ===== 7. Ad Section ===== */
-.ad {
-    padding: 50px 0;
-    background: #0073e6;
-    color: #fff;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
-}
+/* CSS ကို ဒီမှာ ထည့်ထားတယ်၊ လိုအပ်ရင် သီးသန့် .css ဖိုင်ထဲ ထည့်လို့ရတယ် */
+        .subscribe-section {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.ad h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: "Noto Sans Myanmar", serif;
-}
+        .subscribe-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-.ad p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
+        .subscribe-section h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
 
-.ad .btn {
-    background: #ff0000; /* YouTube Red */
-    color: #fff;
-    padding: 10px 20px;
-}
+        .subscribe-section p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
 
-.ad .btn:hover {
-    background: #cc0000; /* Darker Red */
-}
+        .subscribe-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #ff0000; /* YouTube ရဲ့ အနီရောင် */
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-.ad .btn i {
-    margin-right: 10px;
-}
-.btn {
-    text-decoration: none;
-    padding: 10px 15px;
-    background: #3498db;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background 0.3sease, transform 0.3sease;
-}
+        .subscribe-btn i {
+            margin-right: 8px;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #cc0000; /* Hover မှာ အနည်းငယ် မှောင်မယ် */
+        }
+
 /* ===== 7. Slider Styles ===== */
 /* Video Slider */
 .videos {
