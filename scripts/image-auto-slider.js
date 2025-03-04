@@ -1,7 +1,7 @@
 // video-slider.js
 async function loadVideoSlider() {
     try {
-        const response = await fetch('/post/slider-data.json');
+        const response = await fetch('/slider-data.json');
         const sliderData = await response.json();
         const slidesContainer = document.getElementById('videoSlides');
         slidesContainer.innerHTML = '';
