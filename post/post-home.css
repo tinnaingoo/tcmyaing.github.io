@@ -144,8 +144,8 @@ h1, h2, h3 {
 }
 
 .latest-posts {
-    list-style: square;
-    padding: 0;
+    list-style: disc; /* Bullet points ပြမယ် */
+    padding-left: 30px; /* ဘယ်ဘက်က အကွာအဝေးပေးမယ် */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -159,13 +159,17 @@ h1, h2, h3 {
     text-decoration: none;
     color: #007bff;
     text-align: justify;
-    display: flex
-;
+    display: flex;
 }
+
 .latest-posts a:hover {
     text-decoration: underline;
 }
 
+.marker {
+    margin-right: 5px; /* Marker နဲ့ စာသားကြား အကွာအဝေး */
+    color: #333; /* Marker ရဲ့ အရောင် */
+}
 
 /* Container */
 .container {
