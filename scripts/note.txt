@@ -6,6 +6,7 @@
 <script src="/scripts/dynmic-title-update.js"></script>
 <script src="/scripts/navigation-update.js"></script>
 <script src="/scripts/image-auto-slider.js"></script>
+<script src="/scripts/latest-posts.js"></script>
 
 <script src="scripts/image-popup-modal.js"></script>
 
@@ -86,3 +87,15 @@ Category Filtering အတွက်
     </div>
 </div>
 </section>
+
+
+<!-- Latest Posts Widget -->
+        <div class="widget-latest-posts">
+            <h4 class="widget-title">Latest Posts</h4>
+            <ul class="latest-posts" id="latestPostsList">
+                <!-- JavaScript ကနေ dynamically ထည့်ပေးမယ် -->
+            </ul>
+        </div>
+
+
+
