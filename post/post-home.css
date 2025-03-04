@@ -150,19 +150,10 @@ nav ul li a:hover {
 }
 
 /* =======  Search Bar + Dropdown Styling  =======*/
-.header-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .search {
+    position: relative;
     display: flex;
     align-items: center;
-    margin-left: auto;
 }
 
 .search-container {
@@ -171,13 +162,6 @@ nav ul li a:hover {
     background-color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    width: 100%; /* Default အနေနဲ့ ဖွက်ထားမယ် */
-    overflow: hidden;
-    transition: width 0.3s ease; /* Animation အတွက် */
-}
-
-.search-container.active {
-    width: 150px; /* Mobile မှာ ဖွင့်ရင် ဒီလောက် အကျယ်ပြမယ် */
 }
 
 .search-container i {
@@ -189,63 +173,28 @@ nav ul li a:hover {
     border: none;
     outline: none;
     padding: 5px;
-    width: 100%; /* Container အတွင်းမှာ ပြည့်အောင် */
+    width: 150px; /* Desktop အတွက် */
 }
-
-
-.logo.hide {
-    display: none; /* Mobile မှာ search ဖွင့်ရင် logo ဖွက်မယ် */
-}
-
-
 
 .sbutton {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-right: 7px;
-    background: #0073e6;
-    color: #fff;
-    border-radius: 50%;
     cursor: pointer;
-    transition: background 0.3sease;
-}
-
-
-.logo.hide {
-        display: block; /* Desktop မှာ logo မဖွက်ဘူး */
-    }
-
-
-/* Mobile အတွက် */
-@media (max-width: 768px) {
-    .sbutton {
-        display: flex;
-    }
-    .search-container {
-        display: none;
-    
-    }
-
-    
-    .search-results {
-        width: 150px;
-    }
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
 }
 
 .search-results {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 200px;
+    width: 200px; /* Search bar ထက် အနည်းငယ် ပိုကျယ် */
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     max-height: 200px;
     overflow-y: auto;
-    display: none;
+    display: none; /* Default အနေနဲ့ ဖွက်ထားမယ် */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -269,6 +218,16 @@ nav ul li a:hover {
     padding: 8px;
     color: #666;
     font-style: italic;
+}
+
+/* Mobile အတွက် */
+@media (max-width: 768px) {
+    #searchInput {
+        width: 100px;
+    }
+    .search-results {
+        width: 150px;
+    }
 }
 
 
