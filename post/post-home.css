@@ -144,15 +144,18 @@ h1, h2, h3 {
 }
 
 .latest-posts {
-    list-style: disc; /* Bullet points ပြမယ် */
+    list-style: square; /* Bullet points ပြမယ် */
     padding-left: 30px; /* ဘယ်ဘက်က အကွာအဝေးပေးမယ် */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.latest-posts li {
+latest-posts li {
     margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .latest-posts a {
