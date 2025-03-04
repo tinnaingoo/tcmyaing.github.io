@@ -468,6 +468,7 @@ nav ul li a:hover {
 @media (min-width: 769px) {
     .search-container {
         width: 150px; /* Desktop မှာ အမြဲပြထားမယ် */
+        display: none;
     }
     .logo.hide {
         display: block; /* Desktop မှာ logo မဖွက်ဘူး */
