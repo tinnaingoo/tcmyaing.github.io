@@ -241,10 +241,16 @@ nav ul li a:hover {
 /* Mobile အတွက် */
 @media (max-width: 768px) {
     .header-box {
-        flex-wrap: nowrap;
-        position: relative;
-        display: flex;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding-right: 20px;
+    margin-bottom: 5px;
+}
 
     .logo#headerLogo {
         display: block; /* Default မှာ ပေါ်မယ် */
