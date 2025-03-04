@@ -133,6 +133,35 @@ h1, h2, h3 {
     }
 }
 
+/* Widget Latest Posts */
+.widget-latest-posts {
+    margin-bottom: 20px;
+}
+
+.widget-latest-posts .widget-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.latest-posts {
+    list-style: none;
+    padding: 0;
+}
+
+.latest-posts li {
+    margin-bottom: 8px;
+}
+
+.latest-posts a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.latest-posts a:hover {
+    text-decoration: underline;
+}
+
+
 /* Container */
 .container {
     display: flex;
