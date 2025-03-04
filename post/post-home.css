@@ -148,6 +148,8 @@ nav ul li a:hover {
     justify-content: space-between;
     padding: 10px 20px;
     position: relative;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo {
@@ -187,11 +189,12 @@ nav ul li a:hover {
 
 .sbutton {
     cursor: pointer;
-    padding: 5px 10px;
     background-color: #007bff;
     color: #fff;
     border-radius: 5px;
     display: none; /* Desktop မှာ ပျောက်မယ် */
+    width: 40px;
+    height: 40px;
 }
 
 .search-results {
@@ -246,7 +249,13 @@ nav ul li a:hover {
     }
 
     .sbutton#sbutton {
-        display: block; /* Mobile မှာ ပေါ်မယ် */
+        display: flex;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 50%;
     }
 
     /* Active ဖြစ်တဲ့အခါ */
