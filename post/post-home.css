@@ -354,16 +354,19 @@ section.post-content {
 .post-navigation .next-post .nav-content {
     display: flex;
     align-items: flex-end;
+    flex-direction: column;
 }
 
 .post-navigation .prev-post .nav-content {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .post-navigation .nav-links {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 20px;
     width: 100%;
 }
