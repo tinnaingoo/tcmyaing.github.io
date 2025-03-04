@@ -25,6 +25,114 @@ h1, h2, h3 {
 .padauk-regular { font-family: "Padauk", serif; font-weight: 400; font-style: normal; }
 .padauk-bold { font-family: "Padauk", serif; font-weight: 700; font-style: normal; }
 
+/* Main Body Layout */
+.main-body {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px; /* Header ရဲ့ fixed position ကြောင့် margin-top */
+}
+
+.all-post {
+    flex: 0 0 75%; /* Desktop မှာ 75% */
+    padding: 10px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.aside {
+    flex: 0 0 25%;
+    padding: 10px 0;
+    text-align: center;
+    background: #fff;
+    margin-left: 5px;
+    background: #fff;
+}
+
+/* Widget Socials Styles (Already in your CSS, keeping it consistent) */
+.widget-socials {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.widget-title {
+    font-size: 1.5rem;
+    color: #0073e6;
+    margin-bottom: 15px;
+    font-family: "Noto Sans Myanmar", serif;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    margin-bottom: 10px;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    background: #0073e6;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.socials li a:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+ .socials .social-facebook {
+    background-color: #3b5998;
+}
+
+.socials .social-youtube {
+    background-color: #ff0000;
+}
+
+.socials i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.socials__text {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Padauk", serif;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .main-body {
+        flex-direction: column; /* Mobile မှာ column ဖြစ်အောင် */
+        width: 100%;
+    }
+
+    .all-post, .aside {
+        flex: 0 0 100%; /* Mobile မှာ 100% full width */
+        margin-left: 0px;
+    }
+
+    .widget-socials {
+        margin-top: 10px; /* Mobile မှာ သုံးရလွယ်ပါ */
+    }
+
+    .socials a {
+        padding: 8px 12px; /* Mobile မှာ သုံးရလွယ်ပါ */
+    }
+}
+
 /* Container */
 .container {
     display: flex;
