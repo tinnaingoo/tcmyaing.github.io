@@ -143,11 +143,14 @@ nav ul li a:hover {
 
 /* =======  Search Bar + Dropdown Styling  =======*/
 .header-box {
-    display: flex;
+    display: flex
+;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     position: relative;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo {
