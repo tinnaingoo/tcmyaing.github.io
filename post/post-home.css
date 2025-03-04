@@ -170,7 +170,7 @@ nav ul li a:hover {
     background-color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    width: 100%; /* Desktop မှာ ကျယ်လို့ရသလောက် */
+    width: 70%; /* Desktop မှာ ကျယ်လို့ရသလောက် */
 }
 
 .search-container i {
