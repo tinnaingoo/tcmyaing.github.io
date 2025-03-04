@@ -1,0 +1,22 @@
+[
+    {
+        "imageUrl": "/images/sample-img-1.jpeg",
+        "linkUrl": "https://www.youtube.com/watch?v=example1",
+        "caption": "Video Title 1"
+    },
+    {
+        "imageUrl": "/images/sample-img-2.jpeg",
+        "linkUrl": "https://www.youtube.com/watch?v=example2",
+        "caption": "Video Title 2"
+    },
+    {
+        "imageUrl": "/images/sample-img-3.jpg",
+        "linkUrl": "https://www.youtube.com/watch?v=example3",
+        "caption": "Video Title 3"
+    },
+    {
+        "imageUrl": "/images/sample-img-4.jpg",
+        "linkUrl": "https://www.youtube.com/watch?v=example4",
+        "caption": "Video Title 4"
+    }
+]
